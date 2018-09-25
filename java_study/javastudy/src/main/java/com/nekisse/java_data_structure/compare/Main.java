@@ -1,7 +1,7 @@
 package com.nekisse.java_data_structure.compare;
 
-import com.nekisse.java_data_structure.list.arraylist.implementation.ArrayList;
-import com.nekisse.java_data_structure.list.linkedlist.LinkedList;
+import src.main.java.com.nekisse.java_data_structure.list.arraylist.implementation.ArrayList;
+import src.main.java.com.nekisse.java_data_structure.list.linkedlist.LinkedList;
 
 public class Main {
     public static void main(String[] args) {

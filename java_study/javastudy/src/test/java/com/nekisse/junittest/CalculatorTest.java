@@ -1,8 +1,9 @@
-package com.nekisse.junittest;
+package src.test.java.com.nekisse.junittest;
 
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
+import src.main.java.com.nekisse.junittest.Calculator;
 
 import static org.junit.Assert.*;
 

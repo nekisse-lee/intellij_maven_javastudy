@@ -6,11 +6,13 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="java_study" />
+        <module name="javastudy" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="cnsole_chatting" target="1.5" />
       <module name="java_study" target="1.5" />
+      <module name="javastudy" target="1.5" />
     </bytecodeTargetLevel>
   </component>
 </project>

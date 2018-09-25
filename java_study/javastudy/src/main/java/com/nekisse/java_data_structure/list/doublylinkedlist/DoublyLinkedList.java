@@ -8,7 +8,7 @@ public class DoublyLinkedList {
     public void addFirst(Object input) {
         Node newNode = new Node(input);
         newNode.next = head;
-        if (head !=null) {
+        if (head != null) {
             head.prev = newNode;
         }
         head = newNode;
@@ -39,7 +39,7 @@ public class DoublyLinkedList {
             return x;
         } else {
             Node x = tail;
-            for (int i = size-1; i < index; i--) {
+            for (int i = size - 1; i < index; i--) {
                 x = x.prev;
             }
             return x;
@@ -89,6 +89,9 @@ public class DoublyLinkedList {
         head = temp.next;
         Object returnData = temp;
         temp = null;
+        if (head != null) {
+            head.prev = null;
+        }
         size--;
         return returnData;
     }
@@ -100,6 +103,9 @@ public class DoublyLinkedList {
         Node temp = node(k - 1);
         Node todoDeleted = temp.next;
         temp.next = temp.next.next;
+        if (temp.next != null) {
+            temp.next.prev = temp;
+        }
         Object returnData = todoDeleted.data;
         if (todoDeleted == tail) {
             tail = temp;
@@ -157,6 +163,20 @@ public class DoublyLinkedList {
             return lastReturned;
         }
 
+        public boolean hasPrevious() {
+            return nextIndex > 0;
+        }
+
+        public Object previous() {
+            if (next == null) {
+                lastReturned = next = tail;
+            } else {
+                lastReturned = next = next.prev;
+            }
+            nextIndex--;
+            return lastReturned.data;
+        }
+
         public boolean hasNext() {
 
             return nextIndex < size();
@@ -169,8 +189,14 @@ public class DoublyLinkedList {
                 head = newNode;
                 newNode.next = next;
             } else {
-            lastReturned.next = newNode;
-            newNode.next = next;
+                lastReturned.next = newNode;
+                newNode.prev = lastReturned;
+                if (next != null) {
+                    newNode.next = next;
+                    newNode.prev = newNode;
+                } else {
+                    tail = newNode;
+                }
             }
 
             lastReturned = newNode;
@@ -182,9 +208,36 @@ public class DoublyLinkedList {
             if (nextIndex == 0) {
                 throw new IllegalStateException();
             }
-            DoublyLinkedList.this.remove(nextIndex - 1);
+            Node n = lastReturned.next;
+            Node p = lastReturned.prev;
+
+
+            if (p == null) {
+                head = n;
+                head.prev = null;
+                lastReturned = null;
+            } else {
+                p.next = next;
+                lastReturned.prev = null;
+            }
+
+            if (n == null) {
+                tail = p;
+                tail.next = null;
+            } else {
+                n.prev = p;
+            }
+
+            if (next== null) {
+                lastReturned = tail;
+            } else {
+                lastReturned = next.prev;
+            }
+
+            size--;
             nextIndex--;
         }
+
     }
 
 

@@ -1,4 +1,4 @@
-package com.nekisse;
+package src.test.java.com.nekisse;
 
 import  static org.junit.Assert.*;
 import org.junit.Test;
