@@ -1,8 +1,8 @@
 package com.nekisse.oop.extendss;
 
-import src.main.java.com.nekisse.oop.Bus;
+import com.nekisse.oop.Bus;
 import com.nekisse.oop.Bus2;
-import src.main.java.com.nekisse.oop.Car;
+import com.nekisse.oop.Car;
 
 public class Test {
     public static void main(String[] args) {

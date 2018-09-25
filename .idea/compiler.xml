@@ -8,11 +8,18 @@
         <outputRelativeToContentRoot value="true" />
         <module name="javastudy" />
       </profile>
+      <profile name="Annotation profile for console_chatting" enabled="true">
+        <sourceOutputDir name="../../console_chatting/target/generated-sources/annotations" />
+        <sourceTestOutputDir name="../../console_chatting/target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="console_chatting" />
+      </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="cnsole_chatting" target="1.5" />
+      <module name="console_chatting" target="1.5" />
       <module name="java_study" target="1.5" />
-      <module name="javastudy" target="1.5" />
+      <module name="javastudy" target="8" />
     </bytecodeTargetLevel>
   </component>
 </project>
