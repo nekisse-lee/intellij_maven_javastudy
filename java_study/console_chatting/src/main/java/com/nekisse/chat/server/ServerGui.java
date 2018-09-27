@@ -20,7 +20,7 @@ public class ServerGui extends JFrame implements ActionListener {
         setVisible(true);
         setBounds(200,100,400,600);
         setTitle("서버부분");
-        server.setGui(this);
+//        server.setGui(this);
         server.setting();
 
     }

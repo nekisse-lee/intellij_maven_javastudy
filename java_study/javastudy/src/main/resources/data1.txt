@@ -1,11 +1,11 @@
 java8에서 추가된 새로운 기능
-111111
-222222
-333333
-444444
+aaaaaaa
+bbbbbbbb
+cccccccc
+dddddddd
 
 java8에서 추가된 새로운 기능
-111111
-222222
-333333
-444444
+ffffffff
+ssssssss
+ffffffff
+ggggggg

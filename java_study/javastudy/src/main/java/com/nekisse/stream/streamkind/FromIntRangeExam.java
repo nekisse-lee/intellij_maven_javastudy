@@ -14,5 +14,6 @@ public class FromIntRangeExam {
         System.out.println(sum);
 
 
+
     }
 }

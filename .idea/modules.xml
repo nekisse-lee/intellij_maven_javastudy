@@ -2,9 +2,11 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/java_study/client/Client.iml" filepath="$PROJECT_DIR$/java_study/client/Client.iml" />
       <module fileurl="file://$PROJECT_DIR$/java_study/console_chatting/console_chatting.iml" filepath="$PROJECT_DIR$/java_study/console_chatting/console_chatting.iml" />
       <module fileurl="file://$PROJECT_DIR$/java_study/java_study.iml" filepath="$PROJECT_DIR$/java_study/java_study.iml" />
       <module fileurl="file://$PROJECT_DIR$/java_study/javastudy/javastudy.iml" filepath="$PROJECT_DIR$/java_study/javastudy/javastudy.iml" />
+      <module fileurl="file://$PROJECT_DIR$/java_study/minochatting/minochatting.iml" filepath="$PROJECT_DIR$/java_study/minochatting/minochatting.iml" />
     </modules>
   </component>
 </project>

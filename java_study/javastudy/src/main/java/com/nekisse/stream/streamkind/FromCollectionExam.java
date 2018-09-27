@@ -13,6 +13,7 @@ public class FromCollectionExam {
                 new Student("박효신",30)
         );
 
+
         Stream<Student> stream = student.stream();
         stream.forEach(s -> System.out.println(s.getName()));
 

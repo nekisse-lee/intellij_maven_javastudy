@@ -1,13 +1,14 @@
 package com.nekisse.chat.client;
 
-import java.io.DataInputStream;
-import java.io.DataOutputStream;
-import java.io.IOException;
+import java.io.*;
 import java.net.Socket;
+import java.util.Scanner;
 
 public class ClientBackground {
+    Scanner scanner = new Scanner(System.in);
     private Socket socket;
 
+    private PrintWriter printWriter;
     private DataInputStream in;
     private DataOutputStream out;
     private ClientGui gui;
@@ -22,9 +23,16 @@ public class ClientBackground {
             System.out.println("서버연결됨.");
             out = new DataOutputStream(socket.getOutputStream());
             in = new DataInputStream(socket.getInputStream());
+            printWriter = new PrintWriter(out);
 
-            out.writeUTF("클라이언트입니다.");
-            System.out.println("전송완료");
+            while (true) {
+//                out.writeUTF(scanner.nextLine());
+                 printWriter.println(scanner.nextLine());
+//                out.flush();
+                printWriter.flush();
+
+            }
+
         } catch (IOException e) {
             e.printStackTrace();
         }

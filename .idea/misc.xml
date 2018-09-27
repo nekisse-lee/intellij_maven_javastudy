@@ -10,7 +10,18 @@
         <option value="$PROJECT_DIR$/javastudy/pom.xml" />
         <option value="$PROJECT_DIR$/java_study/javastudy/pom.xml" />
         <option value="$PROJECT_DIR$/console_chatting/pom.xml" />
+        <option value="$PROJECT_DIR$/minochatting/pom.xml" />
+        <option value="$PROJECT_DIR$/java_study/console_chatting/pom.xml" />
+        <option value="$PROJECT_DIR$/java_study/minochatting/pom.xml" />
+        <option value="$USER_HOME$/Desktop/공부 예제 폴더/minominomiChatting/Server/pom.xml" />
+        <option value="$USER_HOME$/Desktop/공부 예제 폴더/minominomiChatting/client/pom.xml" />
+        <option value="$PROJECT_DIR$/java_study/client/pom.xml" />
       </list>
+    </option>
+    <option name="ignoredFiles">
+      <set>
+        <option value="$PROJECT_DIR$/java_study/Server/pom.xml" />
+      </set>
     </option>
   </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="false" project-jdk-name="1.8" project-jdk-type="JavaSDK">
