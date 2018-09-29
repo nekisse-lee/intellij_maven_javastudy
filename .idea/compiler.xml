@@ -16,6 +16,7 @@
       <module name="Client" target="8" />
       <module name="cnsole_chatting" target="1.5" />
       <module name="console_chatting" target="1.5" />
+      <module name="examcode" target="1.5" />
       <module name="java_study" target="1.5" />
       <module name="javastudy" target="8" />
       <module name="minochatting" target="1.5" />

@@ -16,11 +16,13 @@
         <option value="$USER_HOME$/Desktop/공부 예제 폴더/minominomiChatting/Server/pom.xml" />
         <option value="$USER_HOME$/Desktop/공부 예제 폴더/minominomiChatting/client/pom.xml" />
         <option value="$PROJECT_DIR$/java_study/client/pom.xml" />
+        <option value="$PROJECT_DIR$/examcode/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">
       <set>
         <option value="$PROJECT_DIR$/java_study/Server/pom.xml" />
+        <option value="$PROJECT_DIR$/java_study/examcode/pom.xml" />
       </set>
     </option>
   </component>
