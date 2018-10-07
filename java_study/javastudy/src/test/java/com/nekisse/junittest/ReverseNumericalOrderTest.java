@@ -1,9 +1,9 @@
 package src.test.java.com.nekisse.junittest;
 
+import com.nekisse.junittest.ReverseNumericalOrder;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.JUnit4;
-import src.main.java.com.nekisse.junittest.ReverseNumericalOrder;
 
 import java.util.Arrays;
 import java.util.Collections;

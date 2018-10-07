@@ -6,7 +6,6 @@
   <component name="MavenProjectsManager">
     <option name="originalFiles">
       <list>
-        <option value="$PROJECT_DIR$/java_study/pom.xml" />
         <option value="$PROJECT_DIR$/javastudy/pom.xml" />
         <option value="$PROJECT_DIR$/java_study/javastudy/pom.xml" />
         <option value="$PROJECT_DIR$/console_chatting/pom.xml" />
@@ -17,6 +16,7 @@
         <option value="$USER_HOME$/Desktop/공부 예제 폴더/minominomiChatting/client/pom.xml" />
         <option value="$PROJECT_DIR$/java_study/client/pom.xml" />
         <option value="$PROJECT_DIR$/examcode/pom.xml" />
+        <option value="$PROJECT_DIR$/java_study/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">
