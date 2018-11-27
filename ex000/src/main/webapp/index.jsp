@@ -10,9 +10,35 @@
 <html>
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF8">
-    <title>$Title$</title>
+    <title>HOME</title>
+    <script src="https://code.jquery.com/jquery-1.11.3.js"></script>
   </head>
+
+  <script >
+      $.ajax({
+          method: "GET",
+          url: "doJSON",
+          dataType: "JSON",
+          success: function (result) {
+              alert(result.name);
+              alert(result["name"]);
+              alert(result['name']);
+          }
+      });
+
+      $.ajax({
+          method: "GET",
+          url: "doD",
+          dataType: "JSON",
+          success: function (result) {
+              alert(result.name);
+              alert(result["name"]);
+              alert(result['name']);
+          }
+      });
+
+  </script>
   <body>
-  $END$
+  hello world~
   </body>
 </html>
