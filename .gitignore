@@ -120,3 +120,4 @@ buildNumber.properties
 
 # End of https://www.gitignore.io/api/java,maven,intellij
 /java_study/examcode/
+!/ex000/src/main/webapp/index.jsp
