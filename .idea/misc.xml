@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="FrameworkDetectionExcludesConfiguration">
+    <file type="web" url="file://$PROJECT_DIR$/ex000" />
+  </component>
   <component name="JavadocGenerationManager">
     <option name="OUTPUT_DIRECTORY" value="$USER_HOME$/Desktop" />
   </component>
@@ -7,7 +10,6 @@
     <option name="originalFiles">
       <list>
         <option value="$PROJECT_DIR$/javastudy/pom.xml" />
-        <option value="$PROJECT_DIR$/java_study/javastudy/pom.xml" />
         <option value="$PROJECT_DIR$/console_chatting/pom.xml" />
         <option value="$PROJECT_DIR$/minochatting/pom.xml" />
         <option value="$PROJECT_DIR$/java_study/console_chatting/pom.xml" />
@@ -17,12 +19,16 @@
         <option value="$PROJECT_DIR$/java_study/client/pom.xml" />
         <option value="$PROJECT_DIR$/examcode/pom.xml" />
         <option value="$PROJECT_DIR$/java_study/pom.xml" />
+        <option value="$PROJECT_DIR$/ex000/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">
       <set>
         <option value="$PROJECT_DIR$/java_study/Server/pom.xml" />
+        <option value="$PROJECT_DIR$/java_study/ex00/pom.xml" />
+        <option value="$PROJECT_DIR$/java_study/ex0000/pom.xml" />
         <option value="$PROJECT_DIR$/java_study/examcode/pom.xml" />
+        <option value="$PROJECT_DIR$/java_study/nekisse00/pom.xml" />
       </set>
     </option>
   </component>

@@ -8,19 +8,25 @@
         <outputRelativeToContentRoot value="true" />
         <module name="Client" />
         <module name="console_chatting" />
-        <module name="javastudy" />
+        <module name="ex000" />
         <module name="minochatting" />
+        <module name="nekisse00" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="Client" target="8" />
       <module name="cnsole_chatting" target="1.5" />
       <module name="console_chatting" target="1.5" />
+      <module name="ex00" target="1.8" />
+      <module name="ex000" target="1.8" />
+      <module name="ex0000" target="1.5" />
       <module name="examcode" target="1.5" />
       <module name="java_study" target="1.5" />
       <module name="javastudy" target="8" />
       <module name="minochatting" target="1.5" />
+      <module name="nekisse00" target="1.5" />
       <module name="Server" target="8" />
+      <module name="springex00" target="1.5" />
     </bytecodeTargetLevel>
   </component>
 </project>
