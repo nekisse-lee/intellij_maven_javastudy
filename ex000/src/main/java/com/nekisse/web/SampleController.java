@@ -35,7 +35,7 @@ public class SampleController {
     @RequestMapping("doC")
     public String doC(@ModelAttribute("msg") String msg) {
 
-        logger.info("doC called.................");
+        logger.info("doC called................." + msg);
 
         return "result";
     }
