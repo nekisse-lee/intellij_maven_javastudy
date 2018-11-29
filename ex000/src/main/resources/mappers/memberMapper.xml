@@ -5,19 +5,37 @@
 <mapper namespace="member">
 
     <select id="getTime" resultType="string">
-        SELECT now()
+        select now()
     </select>
 
     <insert id="insertMember">
-       INSERT  INTO TBL_MEMBER
-        ( USERID,
-          USERPW,
-          USERNAME,
-          EMAIL) VALUES
-       (${userId},
-       ${userPw},
-       ${UserName},
-        ${email})
+        insert into tbl_member (userid, userpw, username, email) values
+            (#{userid}, #{userpw}, #{username}, #{email})
     </insert>
+
+    <select id="selectMember"
+            resultType="com.nekisse.domain.MemberVO">
+        select *
+        from
+            tbl_member
+        where userid = #{userid}
+    </select>
+
+    <select id="readWithPW"
+            resultType="com.nekisse.domain.MemberVO">
+        select
+            *
+        from
+            tbl_member
+        where
+            userid = #{userid} and userpw = #{userpw}
+    </select>
+<!--
+    <select id="readWithPW" resultType="com.nekisse.domain.MemberVO">
+        select *
+        from tbl_member
+        where userid = ${userid} and userpw = ${userpw}
+    </select>
+-->
 
 </mapper>

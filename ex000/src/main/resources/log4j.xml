@@ -11,7 +11,7 @@
 	</appender>
 	
 	<!-- Application Loggers -->
-	<logger name="org.zerock.web">
+	<logger name="com.nekisse.web">
 		<level value="info" />
 	</logger>
 	
