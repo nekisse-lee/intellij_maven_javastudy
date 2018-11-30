@@ -5,6 +5,9 @@ import org.apache.ibatis.session.SqlSession;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
+import java.util.HashMap;
+import java.util.Map;
+
 @Repository
 public class MemberDaoImpl implements MemberDao {
 
@@ -24,11 +27,16 @@ public class MemberDaoImpl implements MemberDao {
 
     @Override
     public MemberVO readMember(String userid) throws Exception {
-        return null;
+        MemberVO vo = sqlSession.selectOne("member.selectMember", userid);
+        return vo;
     }
 
     @Override
     public MemberVO readWithPW(String userid, String userpw) throws Exception {
-        return null;
+        Map<String, String> paramMap = new HashMap<>();
+        paramMap.put("userid", userid);
+        paramMap.put("userpw", userpw);
+
+        return sqlSession.selectOne("member.readWithPW", paramMap);
     }
 }

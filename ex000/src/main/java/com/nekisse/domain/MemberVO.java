@@ -4,6 +4,18 @@ import java.util.Date;
 
 public class MemberVO {
 
+
+    private String userid;
+
+    private String userpw;
+    private String username;
+    private String email;
+    private Date regdate;
+    private Date updatedate;
+
+    public MemberVO() {
+    }
+
     public MemberVO(String userid, String userpw, String username, String email) {
         this.userid = userid;
         this.userpw = userpw;
@@ -12,14 +24,6 @@ public class MemberVO {
         this.regdate = regdate;
         this.updatedate = updatedate;
     }
-
-    private String userid;
-    private String userpw;
-    private String username;
-    private String email;
-    private Date regdate;
-    private Date updatedate;
-
 
     public String getUserid() {
         return userid;
