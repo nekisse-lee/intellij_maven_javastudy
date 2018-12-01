@@ -2,6 +2,7 @@
 <project version="4">
   <component name="FrameworkDetectionExcludesConfiguration">
     <file type="web" url="file://$PROJECT_DIR$/ex000" />
+    <file type="web" url="file://$PROJECT_DIR$/webmvc" />
   </component>
   <component name="JavadocGenerationManager">
     <option name="OUTPUT_DIRECTORY" value="$USER_HOME$/Desktop" />
@@ -20,6 +21,7 @@
         <option value="$PROJECT_DIR$/examcode/pom.xml" />
         <option value="$PROJECT_DIR$/java_study/pom.xml" />
         <option value="$PROJECT_DIR$/ex000/pom.xml" />
+        <option value="$PROJECT_DIR$/webmvc/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">

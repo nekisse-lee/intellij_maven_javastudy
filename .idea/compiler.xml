@@ -11,6 +11,7 @@
         <module name="ex000" />
         <module name="minochatting" />
         <module name="nekisse00" />
+        <module name="webmvc" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -24,9 +25,11 @@
       <module name="java_study" target="1.5" />
       <module name="javastudy" target="8" />
       <module name="minochatting" target="1.5" />
+      <module name="mvcweb" target="1.8" />
       <module name="nekisse00" target="1.5" />
       <module name="Server" target="8" />
       <module name="springex00" target="1.5" />
+      <module name="webmvc" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>
