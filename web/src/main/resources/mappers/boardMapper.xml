@@ -28,7 +28,7 @@
     </delete>
 
 
-    <select id="listAll" resultType="org.zerock.domain.BoardVO">
+    <select id="listAll" resultType="com.nekisse.web.domain.BoardVO">
         select
             bno, title, content, writer, regdate, viewcnt
         from
