@@ -10,7 +10,7 @@ import javax.sql.DataSource;
 import java.sql.Connection;
 
 @RunWith(SpringJUnit4ClassRunner.class)
-@ContextConfiguration(locations = "classpath:spring/root-context.xml")
+@ContextConfiguration(locations = "classpath:spring/**.xml")
 
 public class DataSourceTest {
 
