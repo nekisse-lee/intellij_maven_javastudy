@@ -11,6 +11,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
+import java.util.List;
+
 
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration(locations = "classpath:root-context.xml")
@@ -51,4 +53,13 @@ public class BoardDAOTest {
         dao.delete(3);
     }
 
+    @Test
+    public void testListPage() throws Exception {
+        Integer page = 2;
+
+        List<BoardVO> list = dao.listPage(page);
+        for (BoardVO boardVO : list) {
+            logger.info(boardVO.getBno() + " : " + boardVO.getTitle() );
+        }
+    }
 }

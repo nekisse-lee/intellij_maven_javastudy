@@ -12,7 +12,7 @@
     <title>500</title>
 </head>
 <body>
-<h4>심각한 오류 발생 !</h4>
+<h4>500 심각한 오류 발생 !</h4>
 <p>관리자에게 문의하세요    00000-0----0000</p>
 <p><%=exception.toString()%></p>
 </body>

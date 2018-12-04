@@ -7,41 +7,54 @@
 
     <insert id="create">
         insert into tbl_board (title, content, writer)
-        values(#{title},#{content}, #{writer})
+        values (#{title}, #{content}, #{writer})
     </insert>
 
     <select id="read" resultType="BoardVO">
         select
-            bno, title, content, writer, regdate, viewcnt
+            bno,
+            title,
+            content,
+            writer,
+            regdate,
+            viewcnt
         from
             tbl_board
         where bno = #{bno}
     </select>
 
     <update id="update">
-        update tbl_board set title =#{title}, content =#{content}
+        update tbl_board
+        set title = #{title}, content = #{content}
         where bno = #{bno}
     </update>
 
     <update id="updatemap" parameterType="hashmap">
-        update tbl_board set title =#{title}, content =#{content}
+        update tbl_board
+        set title = #{title}, content = #{content}
         where bno = #{bno}
     </update>
 
 
-
     <delete id="delete">
-        delete from tbl_board where bno = #{bno}
+        delete from tbl_board
+        where bno = #{bno}
     </delete>
 
     <delete id="deletemap" parameterType="hashmap">
-        delete from tbl_board where bno = #{bno}
+        delete from tbl_board
+        where bno = #{bno}
     </delete>
 
 
     <select id="listAll" resultType="BoardVO">
         select
-            bno, title, content, writer, regdate, viewcnt
+            bno,
+            title,
+            content,
+            writer,
+            regdate,
+            viewcnt
         from
             tbl_board
         where bno &gt; 0
@@ -59,6 +72,22 @@
             ]]>
      </select>
     -->
+
+    <select id="listPage" resultType="BoardVO">
+
+        select
+            bno,
+            title,
+            content,
+            writer,
+            regdate,
+            viewcnt
+        from
+            tbl_board
+        where bno &gt; 0
+        order by bno desc
+        limit #{page}, 10
+    </select>
 
 
 </mapper>
