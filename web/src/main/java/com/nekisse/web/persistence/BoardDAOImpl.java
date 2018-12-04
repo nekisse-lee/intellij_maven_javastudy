@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
 import java.util.List;
+import java.util.Map;
 
 
 @Repository
@@ -30,8 +31,18 @@ public class BoardDAOImpl  implements BoardDAO{
     }
 
     @Override
+    public void update(Map map) throws Exception {
+        session.update("board.updatemap", map);
+    }
+
+    @Override
     public void delete(Integer bno) throws Exception {
         session.delete("board.delete", bno);
+    }
+
+    @Override
+    public void delete(Map map) throws Exception {
+        session.delete("board.deletemap", map);
     }
 
     @Override

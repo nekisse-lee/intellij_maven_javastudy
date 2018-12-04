@@ -8,4 +8,8 @@
     </settings>
 
 
+
+    <typeAliases>
+        <package name="com.nekisse.web.domain"/>
+    </typeAliases>
 </configuration>
