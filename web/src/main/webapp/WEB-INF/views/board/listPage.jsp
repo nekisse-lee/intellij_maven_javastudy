@@ -39,7 +39,7 @@
                             <tr>
                                 <td>${boardVO.bno}</td>
                                 <td><a
-                                        href='/board/readPage${pageMaker.cri.page }&bno=${boardVO.bno}'>
+                                        href='/board/readPage?page=${pageMaker.cri.page}&perPageNum=${pageMaker.cri.perPageNum}&bno=${boardVO.bno}'>
                                         ${boardVO.title}</a></td>
                                 <td>${boardVO.writer}</td>
                                 <td><fmt:formatDate pattern="yyyy-MM-dd HH:mm"
@@ -56,33 +56,33 @@
 
                 <div class="box-footer">
 
-<%--
-                    <div class="text-center">
-                        <ul class="pagination">
+                    <%--
+                                        <div class="text-center">
+                                            <ul class="pagination">
 
-                            <c:if test="${pageMaker.prev}">
-                                <li><a
-                                    &lt;%&ndash;href="listPage${pageMaker.makeQuery(pageMaker.startPage - 1) }">&laquo;</a></li>&ndash;%&gt;
-                                        href="listPage?page=${pageMaker.startPage - 1 }">&laquo;</a></li>
-                            </c:if>
+                                                <c:if test="${pageMaker.prev}">
+                                                    <li><a
+                                                        &lt;%&ndash;href="listPage${pageMaker.makeQuery(pageMaker.startPage - 1) }">&laquo;</a></li>&ndash;%&gt;
+                                                            href="listPage?page=${pageMaker.startPage - 1 }">&laquo;</a></li>
+                                                </c:if>
 
-                            <c:forEach begin="${pageMaker.startPage }"
-                                       end="${pageMaker.endPage }" var="idx">
-                                <li
-                                        <c:out value="${pageMaker.cri.page == idx?'class =active':''}"/>>
-                                        &lt;%&ndash;<a href="listPage${pageMaker.makeQuery(idx)}">${idx}</a>&ndash;%&gt;
-                                    <a href="listPage?page=${pageMaker.endPage +1 }">${idx}</a>
-                                </li>
-                            </c:forEach>
+                                                <c:forEach begin="${pageMaker.startPage }"
+                                                           end="${pageMaker.endPage }" var="idx">
+                                                    <li
+                                                            <c:out value="${pageMaker.cri.page == idx?'class =active':''}"/>>
+                                                            &lt;%&ndash;<a href="listPage${pageMaker.makeQuery(idx)}">${idx}</a>&ndash;%&gt;
+                                                        <a href="listPage?page=${pageMaker.endPage +1 }">${idx}</a>
+                                                    </li>
+                                                </c:forEach>
 
-                            <c:if test="${pageMaker.next && pageMaker.endPage > 0}">
-                                <li><a
-                                        href="listPage${pageMaker.makeQuery(pageMaker.endPage +1) }">&raquo;</a></li>
-                            </c:if>
+                                                <c:if test="${pageMaker.next && pageMaker.endPage > 0}">
+                                                    <li><a
+                                                            href="listPage${pageMaker.makeQuery(pageMaker.endPage +1) }">&raquo;</a></li>
+                                                </c:if>
 
-                        </ul>
-                    </div>
---%>
+                                            </ul>
+                                        </div>
+                    --%>
 
 
                     <div class="text-center">
@@ -134,6 +134,7 @@
     }
 
     $(".pagination li a").on("click", function (event) {
+    // $(".pagination li a").click (function (event) {
 
         event.preventDefault();
 

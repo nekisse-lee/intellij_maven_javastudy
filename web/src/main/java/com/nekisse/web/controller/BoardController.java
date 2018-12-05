@@ -81,12 +81,17 @@ public class BoardController {
         model.addAttribute("list", service.listAll());
     }
 
-    @RequestMapping(value = "read", method = RequestMethod.GET)
-    public void read(@RequestParam("bno") Integer bno, Model model) throws Exception {
+    @RequestMapping(value = "readPage", method = RequestMethod.GET)
+    public void read(
+            @RequestParam("bno") Integer bno, Model model, @ModelAttribute("cri") Criteria cri) throws Exception {
+
         logger.info("read ....");
 //        model.addAttribute("boardVO",service.read(bno));
+
         model.addAttribute(service.read(bno));
     }
+
+
 
     /*@RequestMapping(value = "remove", method = RequestMethod.POST)
     public String  remove(@RequestParam("bno") Integer bno, RedirectAttributes rttr) throws Exception {
