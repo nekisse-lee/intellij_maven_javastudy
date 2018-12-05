@@ -1,6 +1,7 @@
 package com.nekisse.web.service;
 
 import com.nekisse.web.domain.BoardVO;
+import com.nekisse.web.domain.Criteria;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -21,5 +22,5 @@ public interface BoardService {
 
     public List<BoardVO> listAll() throws Exception;
 
-
+    public List<BoardVO> listCriteria(Criteria cri) throws Exception;
 }

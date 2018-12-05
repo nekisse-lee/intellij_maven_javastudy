@@ -1,6 +1,7 @@
 package com.nekisse.web;
 
 import com.nekisse.web.domain.BoardVO;
+import com.nekisse.web.domain.Criteria;
 import com.nekisse.web.persistence.BoardDAO;
 import org.junit.Ignore;
 import org.junit.Test;
@@ -60,6 +61,19 @@ public class BoardDAOTest {
         List<BoardVO> list = dao.listPage(page);
         for (BoardVO boardVO : list) {
             logger.info(boardVO.getBno() + " : " + boardVO.getTitle() );
+        }
+    }
+
+
+    @Test
+    public void testListCriteria() throws Exception {
+        Criteria cri = new Criteria();
+        cri.setPage(2);
+        cri.setPerPageNum(10);
+        List<BoardVO> list = dao.listCriteria(cri);
+
+        for (BoardVO boardVO : list) {
+            logger.info(boardVO.getBno() + " : " + boardVO.getTitle());
         }
     }
 }

@@ -88,6 +88,16 @@
         order by bno desc
         limit #{page}, 10
     </select>
+    
+    <select id="listCriteria" resultType="BoardVO">
+        select
+            bno, title, content, writer, regdate, viewcnt
+        from
+            tbl_board
+        where bno &gt; 0
+        order by     bno desc
+        limit  #{pageStart}, ${perPageNum}
+    </select>
 
 
 </mapper>

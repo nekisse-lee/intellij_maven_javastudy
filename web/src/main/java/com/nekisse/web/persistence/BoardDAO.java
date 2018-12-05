@@ -1,6 +1,7 @@
 package com.nekisse.web.persistence;
 
 import com.nekisse.web.domain.BoardVO;
+import com.nekisse.web.domain.Criteria;
 
 import java.util.List;
 import java.util.Map;
@@ -19,10 +20,11 @@ public interface BoardDAO {
 
     public void delete(Map map) throws Exception;
 
-
     public List<BoardVO> listAll() throws Exception;
 
-
     public List<BoardVO> listPage(int page) throws Exception;
+
+    public List<BoardVO> listCriteria(Criteria cri) throws Exception;
+
 
 }

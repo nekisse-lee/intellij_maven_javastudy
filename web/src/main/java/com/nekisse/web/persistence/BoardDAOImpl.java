@@ -1,6 +1,7 @@
 package com.nekisse.web.persistence;
 
 import com.nekisse.web.domain.BoardVO;
+import com.nekisse.web.domain.Criteria;
 import org.apache.ibatis.session.SqlSession;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
@@ -57,5 +58,10 @@ public class BoardDAOImpl  implements BoardDAO{
         }
         page = (page - 1) * 10;
         return session.selectList("board.listPage", page);
+    }
+
+    @Override
+    public List<BoardVO> listCriteria(Criteria cri) throws Exception {
+        return session.selectList("board.listCriteria", cri);
     }
 }
