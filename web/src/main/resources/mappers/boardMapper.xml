@@ -99,5 +99,11 @@
         limit  #{pageStart}, ${perPageNum}
     </select>
 
+    <select id="countPaging" resultType="int">
+        select COUNT(bno)
+        from tbl_board
+        where bno &gt; 0
+    </select>
+
 
 </mapper>
