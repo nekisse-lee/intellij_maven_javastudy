@@ -3,6 +3,7 @@ package com.nekisse.web.controller;
 import com.nekisse.web.domain.BoardVO;
 import com.nekisse.web.domain.Criteria;
 import com.nekisse.web.domain.PageMaker;
+import com.nekisse.web.domain.SearchCriteria;
 import com.nekisse.web.service.BoardService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -148,5 +149,6 @@ public class BoardController {
         rttr.addFlashAttribute("msg", "SUCCESS");
         return "redirect:/board/listPage";
     }
+
 
 }

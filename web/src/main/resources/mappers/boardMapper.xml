@@ -88,7 +88,7 @@
         order by bno desc
         limit #{page}, 10
     </select>
-    
+
     <select id="listCriteria" resultType="BoardVO">
         select
             bno, title, content, writer, regdate, viewcnt
@@ -103,6 +103,53 @@
         select COUNT(bno)
         from tbl_board
         where bno &gt; 0
+    </select>
+
+
+    <sql id="search">
+        <if test="searchType != null" >
+            <if test="searchType == 't'.toString()">
+                and title like CONCAT('%', #{keyword}, '%')
+            </if>
+            <if test="searchType == 'c'.toString()">
+                and content like CONCAT('%', #{keyword}, '%')
+            </if>
+            <if test="searchType == 'w'.toString()">
+                and writer like CONCAT('%', #{keyword}, '%')
+            </if>
+            <if test="searchType == 'tc'.toString()">
+                and ( title like CONCAT('%', #{keyword}, '%') OR content like CONCAT('%', #{keyword}, '%'))
+            </if>
+            <if test="searchType == 'cw'.toString()">
+                and ( content like CONCAT('%', #{keyword}, '%') OR writer like CONCAT('%', #{keyword}, '%'))
+            </if>
+            <if test="searchType == 'tcw'.toString()">
+                and (   title like CONCAT('%', #{keyword}, '%')
+                OR
+                content like CONCAT('%', #{keyword}, '%')
+                OR
+                writer like CONCAT('%', #{keyword}, '%'))
+            </if>
+        </if>
+    </sql>
+
+    <select id="listSearch" resultType="BoardVO">
+        select
+            bno, title, content, writer, regdate, viewcnt
+        from
+            tbl_board
+        where bno &gt; 0
+            <include refid="search"/>
+        order by bno desc
+        limit  #{pageStart}, ${perPageNum}
+    </select>
+
+
+    <select id="listSearchCount" resultType="int">
+        select  count(bno)
+        from tbl_board
+        where bno &gt; 0
+        <include refid="search"/>
     </select>
 
 

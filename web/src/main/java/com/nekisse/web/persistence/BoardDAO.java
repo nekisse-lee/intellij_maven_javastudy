@@ -2,6 +2,7 @@ package com.nekisse.web.persistence;
 
 import com.nekisse.web.domain.BoardVO;
 import com.nekisse.web.domain.Criteria;
+import com.nekisse.web.domain.SearchCriteria;
 
 import java.util.List;
 import java.util.Map;
@@ -27,5 +28,9 @@ public interface BoardDAO {
     public List<BoardVO> listCriteria(Criteria cri) throws Exception;
 
     public int countPaging(Criteria cri) throws Exception;
+
+    public List<BoardVO> listSearch(SearchCriteria cri) throws Exception;
+
+    public int listSearchCount(SearchCriteria cri) throws Exception;
 
 }

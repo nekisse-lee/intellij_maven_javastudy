@@ -2,6 +2,7 @@ package com.nekisse.web.persistence;
 
 import com.nekisse.web.domain.BoardVO;
 import com.nekisse.web.domain.Criteria;
+import com.nekisse.web.domain.SearchCriteria;
 import org.apache.ibatis.session.SqlSession;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
@@ -69,4 +70,17 @@ public class BoardDAOImpl  implements BoardDAO{
     public int countPaging(Criteria cri) throws Exception {
         return session.selectOne("board.countPaging", cri);
     }
+
+
+    @Override
+    public List<BoardVO> listSearch(SearchCriteria cri) throws Exception {
+
+        return session.selectList("board.listSearch", cri);
+    }
+
+    @Override
+    public int listSearchCount(SearchCriteria cri) throws Exception {
+        return session.selectOne("board.listSearchCount", cri);
+    }
+
 }

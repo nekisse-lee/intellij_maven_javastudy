@@ -2,6 +2,7 @@ package com.nekisse.web.service;
 
 import com.nekisse.web.domain.BoardVO;
 import com.nekisse.web.domain.Criteria;
+import com.nekisse.web.domain.SearchCriteria;
 import com.nekisse.web.persistence.BoardDAO;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -61,4 +62,14 @@ public class BoardServiceImpl implements  BoardService{
         return dao.countPaging(cri);
     }
 
+
+    @Override
+    public List<BoardVO> listSearchCriteria(SearchCriteria cri) throws Exception {
+        return dao.listSearch(cri);
+    }
+
+    @Override
+    public int listSearchCount(SearchCriteria cri) throws Exception {
+        return dao.listSearchCount(cri);
+    }
 }
