@@ -146,10 +146,13 @@
 
 
     <select id="listSearchCount" resultType="int">
-        select  count(bno)
+
+        select
+        count(bno)
         from tbl_board
         where bno &gt; 0
         <include refid="search"/>
+
     </select>
 
 
