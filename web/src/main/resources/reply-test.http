@@ -7,18 +7,39 @@
 
 
 
-### 기본사용
-
+###  댓글 추가기능
 POST http://localhost:8080/replies
 Content-Type: application/json
 
 {
 "bno":"4",
-"replytext":"댓글을 추가합니다.",
+"replytext":"댓글을 추가합니다.222",
 "replyer":"user00"
 }
 
+
+### 댓글 갯수 확인
+GET http://localhost:8080/replies/all/4
 ###
+
+###  댓글   번호로  수정 http://localhost:8080/replies/{rno}
+PUT http://localhost:8080/replies/4
+Content-Type: application/json
+
+{
+"replytext":" 수정합니다.222",
+"replyer":"user00"
+}
+###
+
+
+
+DELETE http://localhost:8080/replies/4
+
+
+
+###
+
 
 
 
