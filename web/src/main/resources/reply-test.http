@@ -13,7 +13,7 @@ Content-Type: application/json
 
 {
 "bno":"4",
-"replytext":"댓글을 추가합니다.222",
+"replytext":"댓글을 추가합니다.ㄴㅇㄹ!",
 "replyer":"user00"
 }
 
@@ -30,14 +30,11 @@ Content-Type: application/json
 "replytext":" 수정합니다.222",
 "replyer":"user00"
 }
-###
 
 
 
-DELETE http://localhost:8080/replies/4
-
-
-
+### 댓글 삭제 http://localhost:8080/replies/{rno}
+DELETE http://localhost:8080/replies/5
 ###
 
 

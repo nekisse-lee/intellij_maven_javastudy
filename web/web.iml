@@ -70,5 +70,6 @@
     <orderEntry type="library" name="Maven: com.fasterxml.jackson.core:jackson-annotations:2.8.0" level="project" />
     <orderEntry type="library" name="Maven: com.fasterxml.jackson.core:jackson-core:2.8.4" level="project" />
     <orderEntry type="library" name="Maven: org.bgee.log4jdbc-log4j2:log4jdbc-log4j2-jdbc4:1.16" level="project" />
+    <orderEntry type="library" name="Maven: org.webjars:jquery:2.1.4" level="project" />
   </component>
 </module>
