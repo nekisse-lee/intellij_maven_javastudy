@@ -18,6 +18,8 @@
 
     <!-- 패스 지정 다시해보기 -->
     <resources mapping="/resources/**" location= "/resources/" />
+
+    <!-- 웹자르 클래스패스 -->
     <resources mapping="/webjars/**" location="classpath:/META-INF/resources/webjars/"/>
 
 
