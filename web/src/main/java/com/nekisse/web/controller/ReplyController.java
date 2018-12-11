@@ -48,20 +48,6 @@ public class ReplyController {
         return entity;
     }
 
-    @RequestMapping(value = "/{rno}", method = {RequestMethod.PUT, RequestMethod.PATCH})
-    public ResponseEntity<String> update(@PathVariable("rno") int rno, @RequestBody ReplyVO vo) {
-
-        ResponseEntity<String> entity = null;
-        try {
-            vo.setRno(rno);
-            service.update(vo);
-            entity = new ResponseEntity<>("SUCCESS", HttpStatus.OK);
-        } catch (Exception e) {
-            e.printStackTrace();
-            entity = new ResponseEntity<>(e.getMessage(), HttpStatus.BAD_REQUEST);
-        }
-        return entity;
-    }
 
 
     @RequestMapping(value = "/{rno}", method = RequestMethod.DELETE)
@@ -79,6 +65,21 @@ public class ReplyController {
         return entity;
     }
 
+
+    @RequestMapping(value = "/{rno}", method = {RequestMethod.PUT, RequestMethod.PATCH})
+    public ResponseEntity<String> update(@PathVariable("rno") int rno, @RequestBody ReplyVO vo) {
+
+        ResponseEntity<String> entity = null;
+        try {
+            vo.setRno(rno);
+            service.update(vo);
+            entity = new ResponseEntity<>("SUCCESS", HttpStatus.OK);
+        } catch (Exception e) {
+            e.printStackTrace();
+            entity = new ResponseEntity<>(e.getMessage(), HttpStatus.BAD_REQUEST);
+        }
+        return entity;
+    }
 
     @RequestMapping(value = "/{bno}/{page}", method = RequestMethod.GET)
     public ResponseEntity<Map<String, Object>> listPage(
@@ -109,5 +110,6 @@ public class ReplyController {
         }
         return entity;
     }
+
 
 }

@@ -23,11 +23,11 @@ GET http://localhost:8080/replies/all/4
 ###
 
 ###  댓글   번호로  수정 http://localhost:8080/replies/{rno}
-PUT http://localhost:8080/replies/4
+PUT http://localhost:8080/replies/6
 Content-Type: application/json
 
 {
-"replytext":" 수정합니다.222",
+"replytext":" 수정합니다.12312312",
 "replyer":"user00"
 }
 
@@ -36,6 +36,8 @@ Content-Type: application/json
 ### 댓글 삭제 http://localhost:8080/replies/{rno}
 DELETE http://localhost:8080/replies/5
 ###
+
+
 
 
 
