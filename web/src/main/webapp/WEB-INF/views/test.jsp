@@ -8,8 +8,7 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <%--<script src="../../resources/jquery/2.1.4/jquery.min.js"></script>--%>
-    <script src="webjars/jquery/2.1.4/jquery.min.js"></script>
+
         <style>
             #modDiv {
                 width: 300px;
@@ -63,6 +62,8 @@
 
 
 </body>
+<%--<script src="../../resources/jquery/2.1.4/jquery.min.js"></script>--%>
+<script src="webjars/jquery/2.1.4/jquery.min.js"></script>
 <script>
     var bno = 4;
 
