@@ -40,7 +40,8 @@ public class ReplyDAOImpl implements ReplyDAO {
         return session.selectList("reply.listPage", paramMap);
     }
 
-    public int count(int bno) throws Exception{
+    public int count(Integer bno) throws Exception{
+
         return session.selectOne("reply.count",bno);
     }
 

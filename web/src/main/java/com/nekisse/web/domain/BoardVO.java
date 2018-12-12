@@ -12,7 +12,6 @@ public class BoardVO {
     private int viewcnt;
 
 
-
     public Integer getBno() {
         return bno;
     }

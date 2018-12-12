@@ -3,26 +3,26 @@ package com.nekisse.web.domain;
 import java.util.Date;
 
 public class ReplyVO {
-    private int rno;
-    private int bno;
+    private Integer rno;
+    private Integer bno;
     private String replytext;
     private String replyer;
 
     private Date regdate;
 
-    public int getRno() {
+    public Integer getRno() {
         return rno;
     }
 
-    public void setRno(int rno) {
+    public void setRno(Integer rno) {
         this.rno = rno;
     }
 
-    public int getBno() {
+    public Integer getBno() {
         return bno;
     }
 
-    public void setBno(int bno) {
+    public void setBno(Integer bno) {
         this.bno = bno;
     }
 
