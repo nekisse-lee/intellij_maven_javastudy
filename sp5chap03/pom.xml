@@ -10,7 +10,6 @@
 
     <properties>
         <spring-framework.version>5.1.2.RELEASE</spring-framework.version>
-
     </properties>
 
     <dependencies>

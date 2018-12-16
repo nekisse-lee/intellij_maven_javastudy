@@ -13,13 +13,14 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
+
 public class MainForSpring {
     private static ApplicationContext ctx = null;
 
     public static void main(String[] args) throws IOException {
-//        ctx = new AnnotationConfigApplicationContext(AppCtx.class);
+        ctx = new AnnotationConfigApplicationContext(AppCtx.class);
 //        ctx = new AnnotationConfigApplicationContext(AppCtx1.class, AppCtx2.class);
-        ctx = new AnnotationConfigApplicationContext(AppCtxImport.class);
+//        ctx = new AnnotationConfigApplicationContext(AppCtxImport.class);
 
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
 
