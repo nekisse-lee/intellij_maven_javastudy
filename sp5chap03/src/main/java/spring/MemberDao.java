@@ -1,5 +1,6 @@
 package spring;
 
+import java.util.Collection;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -22,8 +23,7 @@ public class MemberDao {
     }
 
 
-
-
-
-
+    public Collection<Member> selectAll() {
+        return map.values();
+    }
 }

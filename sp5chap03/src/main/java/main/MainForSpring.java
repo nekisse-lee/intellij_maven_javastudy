@@ -1,14 +1,26 @@
 package main;
 
 import assembler.Assembler;
+import config.AppCtx;
+import config.AppCtx1;
+import config.AppCtx2;
+import config.AppCtxImport;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import spring.*;
 
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
-public class mainForAssembler {
+public class MainForSpring {
+    private static ApplicationContext ctx = null;
+
     public static void main(String[] args) throws IOException {
+//        ctx = new AnnotationConfigApplicationContext(AppCtx.class);
+//        ctx = new AnnotationConfigApplicationContext(AppCtx1.class, AppCtx2.class);
+        ctx = new AnnotationConfigApplicationContext(AppCtxImport.class);
+
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
 
         while (true) {
@@ -25,20 +37,32 @@ public class mainForAssembler {
             } else if (command.startsWith("change ")) {
                 processChangeCommand(command.split(" "));
                 continue;
+            } else if (command.startsWith("list")) {
+                processListCommand();
+                continue;
+            } else if (command.startsWith("info ")) {
+                processInfoCommand(command.split(" "));
+                continue;
+
+            } else if (command.equalsIgnoreCase("version")) {
+                processVersionCommand();
+                continue;
             }
             printHelp();
         }
     }
 
 
-    private static Assembler assembler = new Assembler();
 
+//    private static Assembler assembler = new Assembler();
     private static void processNewCommand(String[] arg) {
         if (arg.length != 5) {
             printHelp();
             return;
         }
-        MemberRegisterService regSvc = assembler.getRegSvc();
+//        MemberRegisterService regSvc = assembler.getRegSvc();
+        MemberRegisterService regSvc = ctx.getBean("memberRegSvc",MemberRegisterService.class);
+
         RegisterRequest req = new RegisterRequest();
         req.setEmail(arg[1]);
         req.setName(arg[2]);
@@ -65,7 +89,11 @@ public class mainForAssembler {
             return;
         }
 
-        ChangePasswordService changePwdSvc = assembler.getPwdSvc();
+//        ChangePasswordService changePwdSvc = assembler.getPwdSvc();
+        ChangePasswordService changePwdSvc = ctx.getBean("changePwdSvc", ChangePasswordService.class);
+        ChangePasswordService changePwdSvc1 = (ChangePasswordService) ctx.getBean("changePwdSvc");
+
+
 
         try {
             changePwdSvc.changePassword(arg[1], arg[2], arg[3]);
@@ -81,10 +109,30 @@ public class mainForAssembler {
         System.out.println("\n잘못된 명령입니다. 아래 명령어 사용법을 확인하세요");
         System.out.println("명령어 사용법");
         System.out.println("new 이메일 이름 암호 암호확인");
-        System.out.println("change 이메일 현재비번 변경비번\n");
+        System.out.println("change 이메일 현재비번 변경비번");
+        System.out.println("list");
+        System.out.println("version");
+        System.out.println("info 이메일\n" );
+    }
+
+    private static void processListCommand() {
+        MemberListPrinter listPrinter = (MemberListPrinter) ctx.getBean("listPrinter");
+        listPrinter.printAll();
+    }
+
+    private static void processInfoCommand(String[] arg) {
+        if (arg.length != 2) {
+            printHelp();
+            return;
+        }
+        MemberInfoPrinter infoPrinter = ctx.getBean("infoPrinter", MemberInfoPrinter.class);
+        infoPrinter.printMemberInfo(arg[1]);
     }
 
 
-
+    private static void processVersionCommand() {
+        VersionPrinter versionPrinter = ctx.getBean( VersionPrinter.class);
+        versionPrinter.print();
+    }
 
 }
