@@ -5,7 +5,7 @@ import org.springframework.beans.factory.annotation.Qualifier;
 
 @Qualifier("chgPwdSvc")
 public class ChangePasswordService {
-    @Autowired
+//    @Autowired
     private MemberDao memberDao;
 
     /*public void setMemberDao(MemberDao memberDao) {

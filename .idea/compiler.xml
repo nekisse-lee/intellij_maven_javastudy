@@ -11,6 +11,7 @@
         <module name="ex000" />
         <module name="minochatting" />
         <module name="nekisse00" />
+        <module name="sp5-chap06" />
         <module name="sp5-chap07" />
         <module name="sp5chap03" />
         <module name="web" />
@@ -31,6 +32,7 @@
       <module name="mvcweb" target="1.8" />
       <module name="nekisse00" target="1.5" />
       <module name="Server" target="8" />
+      <module name="sp5-chap06" target="1.8" />
       <module name="sp5-chap07" target="1.8" />
       <module name="sp5chap03" target="1.8" />
       <module name="springex00" target="1.5" />

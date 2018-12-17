@@ -1,18 +1,30 @@
 package spring;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 
 import java.util.Collection;
 
 
-
 public class MemberListPrinter {
-    @Autowired
     private MemberDao memberDao;
 
-    @Autowired
+
     private MemberPrinter printer;
 
+    public MemberListPrinter() {
+    }
+
+    @Autowired
+    public void setMemberDao(MemberDao memberDao) {
+        this.memberDao = memberDao;
+    }
+
+    @Autowired
+    @Qualifier("printer")
+    public void setPrinter(MemberPrinter printer) {
+        this.printer = printer;
+    }
 
     /*public MemberListPrinter(MemberDao memberDao, MemberPrinter printer) {
         this.memberDao = memberDao;

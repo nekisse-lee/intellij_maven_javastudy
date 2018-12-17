@@ -2,7 +2,7 @@ package spring;
 
 import org.springframework.context.annotation.ComponentScan;
 
-@ComponentScan
+//@ComponentScan
 public class MemberPrinter {
 
     public void print(Member member) {
