@@ -8,6 +8,7 @@ import spring.*;
 @Configuration
 public class AppCtx3 {
 
+/*
     @Autowired
     private MemberDao memberDao;
     @Autowired
@@ -48,4 +49,5 @@ public class AppCtx3 {
         return versionPrinter;
     }
 
+*/
 }

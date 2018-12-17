@@ -1,12 +1,14 @@
 package spring;
 
+import org.springframework.stereotype.Component;
+
 import java.util.Collection;
 import java.util.HashMap;
 import java.util.Map;
 
+@Component
 public class MemberDao {
     private static long nextId = 0;
-
     private Map<String, Member> map = new HashMap<String, Member>();
 
     public Member selectByEmail(String email) {

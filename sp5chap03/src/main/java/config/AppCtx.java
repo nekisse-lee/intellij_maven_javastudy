@@ -2,22 +2,24 @@ package config;
 
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Profile;
 import spring.*;
 
 @Configuration
+@ComponentScan(basePackages = {"spring"})
 public class AppCtx {
 
 
-    @Bean
+    /*@Bean
     public MemberDao memberDao() {
         return new MemberDao();
-    }
+    }*/
 
     @Bean
     public MemberRegisterService memberRegSvc() {
-        return new MemberRegisterService(memberDao());
+        return new MemberRegisterService();
     }
 
     @Bean
@@ -35,17 +37,21 @@ public class AppCtx {
 
     @Bean
     public MemberListPrinter listPrinter() {
-        return new MemberListPrinter(memberDao(), memberPrinter());
+        return new MemberListPrinter();
     }
 
+/*
     @Bean
     public MemberInfoPrinter infoPrinter() {
         MemberInfoPrinter infoPrinter = new MemberInfoPrinter();
-        infoPrinter.setMemDao(memberDao());
-        infoPrinter.setPrinter(memberPrinter());
+        */
+/*infoPrinter.setMemDao(memberDao());
+        infoPrinter.setPrinter(memberPrinter());*//*
+
         return infoPrinter;
     }
 
+*/
     @Bean
     public VersionPrinter versionPrinter() {
         VersionPrinter versionPrinter = new VersionPrinter();
