@@ -255,7 +255,7 @@
     if (typeof (Storage) !== "undefined") {
       localStorage.setItem(name, val);
     } else {
-      alert('Please use a modern browser to properly view this template!');
+      alert('Please use a modern browser to properly pages this template!');
     }
   }
 
@@ -269,7 +269,7 @@
     if (typeof (Storage) !== "undefined") {
       return localStorage.getItem(name);
     } else {
-      alert('Please use a modern browser to properly view this template!');
+      alert('Please use a modern browser to properly pages this template!');
     }
   }
 

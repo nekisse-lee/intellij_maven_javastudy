@@ -1,0 +1,13 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="sp5-chap11:war exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/sp5_chap11_war_exploded</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="sp5-chap11/web/webapp" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="sp5-chap11" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>

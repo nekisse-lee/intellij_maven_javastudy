@@ -1065,13 +1065,13 @@ TableTools.prototype = {
 
 
 	/**
-	 * Programmatically enable or disable the print view
-	 *  @param {boolean} [bView=true] Show the print view if true or not given. If false, then
-	 *    terminate the print view and return to normal.
-	 *  @param {object} [oConfig={}] Configuration for the print view
+	 * Programmatically enable or disable the print pages
+	 *  @param {boolean} [bView=true] Show the print pages if true or not given. If false, then
+	 *    terminate the print pages and return to normal.
+	 *  @param {object} [oConfig={}] Configuration for the print pages
 	 *  @param {boolean} [oConfig.bShowAll=false] Show all rows in the table if true
 	 *  @param {string} [oConfig.sInfo] Information message, displayed as an overlay to the
-	 *    user to let them know what the print view is.
+	 *    user to let them know what the print pages is.
 	 *  @param {string} [oConfig.sMessage] HTML string to show at the top of the document - will
 	 *    be included in the printed document.
 	 */
@@ -2425,7 +2425,7 @@ TableTools.prototype = {
 		{
 			this._fnPrintScrollStart( oSetDT );
 
-			// If the table redraws while in print view, the DataTables scrolling
+			// If the table redraws while in print pages, the DataTables scrolling
 			// setup would hide the header, so we need to readd it on draw
 			$(this.s.dt.nTable).bind('draw.DTTT_Print', function () {
 				that._fnPrintScrollStart( oSetDT );
@@ -2546,7 +2546,7 @@ TableTools.prototype = {
 			nTheadSize, nTfootSize;
 
 		/* Copy the header in the thead in the body table, this way we show one single table when
-		 * in print view. Note that this section of code is more or less verbatim from DT 1.7.0
+		 * in print pages. Note that this section of code is more or less verbatim from DT 1.7.0
 		 */
 		nTheadSize = oSetDT.nTable.getElementsByTagName('thead');
 		if ( nTheadSize.length > 0 )
@@ -2903,11 +2903,11 @@ TableTools.BUTTONS = {
 	} ),
 
 	"print": $.extend( {}, TableTools.buttonBase, {
-		"sInfo": "<h6>Print view</h6><p>Please use your browser's print function to "+
+		"sInfo": "<h6>Print pages</h6><p>Please use your browser's print function to "+
 		  "print this table. Press escape when finished.</p>",
 		"sMessage": null,
 		"bShowAll": true,
-		"sToolTip": "View print view",
+		"sToolTip": "View print pages",
 		"sButtonClass": "DTTT_button_print",
 		"sButtonText": "Print",
 		"fnClick": function ( nButton, oConfig ) {

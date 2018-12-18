@@ -414,7 +414,7 @@ KeyTable = function ( oInit )
 	 * Purpose:  Set focus on a node, and remove from an old node if needed
 	 * Returns:  -
 	 * Inputs:   node:nTarget - node we want to focus on
-	 *           bool:bAutoScroll - optional - should we scroll the view port to the display
+	 *           bool:bAutoScroll - optional - should we scroll the pages port to the display
 	 */
 	function _fnSetFocus( nTarget, bAutoScroll )
 	{
@@ -1004,7 +1004,7 @@ KeyTable = function ( oInit )
 	 *   node:table - the table to use, if not given, first table with class 'KeyTable' will be used
 	 *   string:focusClass - focusing class to give to table elements
 	 *           object:that - focus
-	 *   bool:initScroll - scroll the view port on load, default true
+	 *   bool:initScroll - scroll the pages port on load, default true
 	 *   int:tabIndex - the tab index to give the hidden input element
 	 */
 	function _fnInit( table, datatable, oInit, that )

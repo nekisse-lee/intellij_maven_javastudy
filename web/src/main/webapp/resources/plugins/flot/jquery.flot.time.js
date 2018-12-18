@@ -103,7 +103,7 @@ API.txt for details.
 		return r.join("");
 	}
 
-	// To have a consistent view of time-based data independent of which time
+	// To have a consistent pages of time-based data independent of which time
 	// zone the client happens to be in we need a date-like object independent
 	// of time zones.  This is done through a wrapper that only calls the UTC
 	// versions of the accessor methods.

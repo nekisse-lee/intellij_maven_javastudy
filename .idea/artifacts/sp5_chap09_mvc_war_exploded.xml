@@ -1,0 +1,25 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="sp5-chap09-mvc:war exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/sp5_chap09_mvc_war_exploded</output-path>
+    <root id="root">
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="sp5-chap09-mvc" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="Maven: org.springframework:spring-context:5.1.2.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-aop:5.1.2.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-beans:5.1.2.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-core:5.1.2.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-jcl:5.1.2.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-expression:5.1.2.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-webmvc:5.1.2.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-web:5.1.2.RELEASE" />
+          <element id="library" level="project" name="Maven: javax.servlet:jstl:1.2" />
+        </element>
+      </element>
+      <element id="library" level="project" name="Spring-4.3.18.RELEASE" />
+      <element id="javaee-facet-resources" facet="sp5-chap09-mvc/web/webapp" />
+    </root>
+  </artifact>
+</component>

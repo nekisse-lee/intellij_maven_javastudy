@@ -645,8 +645,8 @@ a.fc-more:hover {
 	        box-sizing: content-box;
 }
 
-.fc-view, /* scope positioning and z-index's for everything within the view */
-.fc-view > table { /* so dragged elements can be above the view's main element */
+.fc-view, /* scope positioning and z-index's for everything within the pages */
+.fc-view > table { /* so dragged elements can be above the pages's main element */
 	position: relative;
 	z-index: 1;
 }
@@ -658,7 +658,7 @@ a.fc-more:hover {
 
 .fc-basicWeek-view .fc-content-skeleton,
 .fc-basicDay-view .fc-content-skeleton {
-	/* we are sure there are no day numbers in these views, so... */
+	/* we are sure there are no day numbers in these pages, so... */
 	padding-top: 1px; /* add a pixel to make sure there are 2px padding above events */
 	padding-bottom: 1em; /* ensure a space at bottom of cell for user selecting/clicking */
 }

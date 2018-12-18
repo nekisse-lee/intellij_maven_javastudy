@@ -13,17 +13,18 @@
         <module name="nekisse00" />
         <module name="sp5-chap06" />
         <module name="sp5-chap07" />
+        <module name="sp5-chap09-mvc" />
         <module name="sp5chap03" />
         <module name="web" />
         <module name="webmvc" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="Client" target="1.5" />
+      <module name="Client" target="8" />
       <module name="cnsole_chatting" target="1.5" />
       <module name="console_chatting" target="1.5" />
       <module name="ex00" target="1.8" />
-      <module name="ex000" target="1.5" />
+      <module name="ex000" target="1.8" />
       <module name="ex0000" target="1.5" />
       <module name="examcode" target="1.5" />
       <module name="java_study" target="1.5" />
@@ -34,10 +35,13 @@
       <module name="Server" target="8" />
       <module name="sp5-chap06" target="1.8" />
       <module name="sp5-chap07" target="1.8" />
+      <module name="sp5-chap09-mvc" target="1.8" />
+      <module name="sp5-chap11" target="1.8" />
       <module name="sp5chap03" target="1.8" />
+      <module name="sp5chap09" target="1.8" />
       <module name="springex00" target="1.5" />
       <module name="web" target="1.8" />
-      <module name="webmvc" target="1.5" />
+      <module name="webmvc" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>
