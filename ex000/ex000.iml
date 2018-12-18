@@ -30,6 +30,11 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="Maven: org.springframework:spring-jdbc:5.1.2.RELEASE" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework:spring-tx:5.1.2.RELEASE" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework:spring-test:5.1.2.RELEASE" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework:spring-webmvc:5.1.2.RELEASE" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework:spring-web:5.1.2.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.bgee.log4jdbc-log4j2:log4jdbc-log4j2-jdbc4:1.16" level="project" />
     <orderEntry type="library" name="Maven: com.fasterxml.jackson.core:jackson-databind:2.9.5" level="project" />
     <orderEntry type="library" name="Maven: com.fasterxml.jackson.core:jackson-annotations:2.9.0" level="project" />
