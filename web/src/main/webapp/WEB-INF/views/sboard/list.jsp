@@ -23,27 +23,27 @@
 				<div class='box-body'>
 
 					<select name="searchType">
-						<option value="n"
+						<options value="n"
 							<c:out value="${cri.searchType == null?'selected':''}"/>>
-							---</option>
-						<option value="t"
+							---</options>
+						<options value="t"
 							<c:out value="${cri.searchType eq 't'?'selected':''}"/>>
-							Title</option>
-						<option value="c"
+							Title</options>
+						<options value="c"
 							<c:out value="${cri.searchType eq 'c'?'selected':''}"/>>
-							Content</option>
-						<option value="w"
+							Content</options>
+						<options value="w"
 							<c:out value="${cri.searchType eq 'w'?'selected':''}"/>>
-							Writer</option>
-						<option value="tc"
+							Writer</options>
+						<options value="tc"
 							<c:out value="${cri.searchType eq 'tc'?'selected':''}"/>>
-							Title OR Content</option>
-						<option value="cw"
+							Title OR Content</options>
+						<options value="cw"
 							<c:out value="${cri.searchType eq 'cw'?'selected':''}"/>>
-							Content OR Writer</option>
-						<option value="tcw"
+							Content OR Writer</options>
+						<options value="tcw"
 							<c:out value="${cri.searchType eq 'tcw'?'selected':''}"/>>
-							Title OR Content OR Writer</option>
+							Title OR Content OR Writer</options>
 					</select> <input type="text" name='keyword' id="keywordInput"
 						value='${cri.keyword }'>
 					<button id='searchBtn'>Search</button>
@@ -145,7 +145,7 @@
 							self.location = "list"
 									+ '${pageMaker.makeQuery(1)}'
 									+ "&searchType="
-									+ $("select option:selected").val()
+									+ $("select options:selected").val()
 									+ "&keyword=" + $('#keywordInput').val();
 
 						});

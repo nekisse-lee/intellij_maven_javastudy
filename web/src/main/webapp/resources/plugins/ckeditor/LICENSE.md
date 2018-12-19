@@ -134,7 +134,7 @@ and give any other recipients of the Program a copy of this License
 along with the Program.
 
 You may charge a fee for the physical act of transferring a copy, and
-you may at your option offer warranty protection in exchange for a fee.
+you may at your options offer warranty protection in exchange for a fee.
 
   2. You may modify your copy or copies of the Program or any portion
 of it, thus forming a work based on the Program, and copy and
@@ -290,7 +290,7 @@ address new problems or concerns.
 
 Each version is given a distinguishing version number.  If the Program
 specifies a version number of this License which applies to it and "any
-later version", you have the option of following the terms and conditions
+later version", you have the options of following the terms and conditions
 either of that version or of any later version published by the Free
 Software Foundation.  If the Program does not specify a version number of
 this License, you may choose any version ever published by the Free Software
@@ -490,7 +490,7 @@ warranty; and distribute a copy of this License along with the
 Library.
 
   You may charge a fee for the physical act of transferring a copy,
-and you may at your option offer warranty protection in exchange for a
+and you may at your options offer warranty protection in exchange for a
 fee.
 
   2. You may modify your copy or copies of the Library or any portion
@@ -555,7 +555,7 @@ these notices.
 that copy, so the ordinary GNU General Public License applies to all
 subsequent copies and derivative works made from that copy.
 
-  This option is useful when you wish to copy part of the code of
+  This options is useful when you wish to copy part of the code of
 the Library into a program that is not a library.
 
   4. You may copy and distribute the Library (or a portion or
@@ -751,7 +751,7 @@ but may differ in detail to address new problems or concerns.
 
 Each version is given a distinguishing version number.  If the Library
 specifies a version number of this License which applies to it and
-"any later version", you have the option of following the terms and
+"any later version", you have the options of following the terms and
 conditions either of that version or of any later version published by
 the Free Software Foundation.  If the Library does not specify a
 license version number, you may choose any version ever published by

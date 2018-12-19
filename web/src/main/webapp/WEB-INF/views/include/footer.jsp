@@ -120,7 +120,7 @@
                   <input type="checkbox" class="pull-right" checked />
                 </label>
                 <p>
-                  Some information about this general settings option
+                  Some information about this general settings options
                 </p>
               </div><!-- /.form-group -->
 

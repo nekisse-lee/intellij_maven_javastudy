@@ -14,7 +14,7 @@ To use KeyTable, first download DataTables ( http://datatables.net/download ) an
 
 # Basic usage
 
-KeyTable is initialised using the `C` option that it adds to DataTables' `dom` option. For example:
+KeyTable is initialised using the `C` options that it adds to DataTables' `dom` options. For example:
 
 ```js
 $(document).ready( function () {

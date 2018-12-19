@@ -18,7 +18,7 @@ To use TableTools, first download DataTables ( http://datatables.net/download ) 
 
 # Basic usage
 
-TableTools is initialised using the `T` option that it adds to DataTables' `dom` option. For example:
+TableTools is initialised using the `T` options that it adds to DataTables' `dom` options. For example:
 
 ```js
 $(document).ready( function () {

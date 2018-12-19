@@ -1,6 +1,6 @@
 # FixedColumns
 
-When making use of DataTables' x-axis scrolling feature (`scrollX`), you may wish to fix the left or right most columns in place. This plug-in for DataTables provides exactly this option (for non-scrolling tables, please use the FixedHeader plug-in, which can fix headers, footers and columns). Key features include:
+When making use of DataTables' x-axis scrolling feature (`scrollX`), you may wish to fix the left or right most columns in place. This plug-in for DataTables provides exactly this options (for non-scrolling tables, please use the FixedHeader plug-in, which can fix headers, footers and columns). Key features include:
 
 * Freezes the left most column to the side of the table
 * Option to freeze two or more columns
