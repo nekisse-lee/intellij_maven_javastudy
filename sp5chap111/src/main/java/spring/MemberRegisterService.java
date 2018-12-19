@@ -1,5 +1,7 @@
 package spring;
 
+import org.springframework.stereotype.Service;
+
 import java.time.LocalDateTime;
 
 public class MemberRegisterService {
