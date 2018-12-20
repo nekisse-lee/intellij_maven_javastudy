@@ -12,6 +12,7 @@
       <module fileurl="file://$PROJECT_DIR$/sp5-chap09-mvc/sp5-chap09-mvc.iml" filepath="$PROJECT_DIR$/sp5-chap09-mvc/sp5-chap09-mvc.iml" />
       <module fileurl="file://$PROJECT_DIR$/sp5chap03/sp5chap03.iml" filepath="$PROJECT_DIR$/sp5chap03/sp5chap03.iml" />
       <module fileurl="file://$PROJECT_DIR$/sp5chap111/sp5chap111.iml" filepath="$PROJECT_DIR$/sp5chap111/sp5chap111.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sp5chap13/sp5chap13.iml" filepath="$PROJECT_DIR$/sp5chap13/sp5chap13.iml" />
       <module fileurl="file://$PROJECT_DIR$/web/web.iml" filepath="$PROJECT_DIR$/web/web.iml" />
       <module fileurl="file://$PROJECT_DIR$/webmvc/webmvc.iml" filepath="$PROJECT_DIR$/webmvc/webmvc.iml" />
     </modules>

@@ -8,7 +8,7 @@ import org.springframework.web.servlet.config.annotation.*;
 
 @Configuration
 @EnableWebMvc
-public class MvcConfig111 implements WebMvcConfigurer {
+public class MvcConfig13 implements WebMvcConfigurer {
 /* 글로벌 범위 validator
     @Override
     public Validator getValidator() {

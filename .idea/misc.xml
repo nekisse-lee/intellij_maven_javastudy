@@ -3,6 +3,7 @@
   <component name="FrameworkDetectionExcludesConfiguration">
     <file type="web" url="file://$PROJECT_DIR$/ex000" />
     <file type="web" url="file://$PROJECT_DIR$/sp5chap111" />
+    <file type="web" url="file://$PROJECT_DIR$/sp5chap13" />
     <file type="web" url="file://$PROJECT_DIR$/web" />
     <file type="web" url="file://$PROJECT_DIR$/webmvc" />
   </component>
@@ -30,6 +31,7 @@
         <option value="$PROJECT_DIR$/sp5-chap06/pom.xml" />
         <option value="$PROJECT_DIR$/sp5-chap09-mvc/pom.xml" />
         <option value="$PROJECT_DIR$/sp5chap111/pom.xml" />
+        <option value="$PROJECT_DIR$/sp5chap13/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">

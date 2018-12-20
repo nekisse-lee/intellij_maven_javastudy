@@ -47,11 +47,6 @@
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="Spring MVC-4.3.18.RELEASE" level="project" />
     <orderEntry type="library" name="Spring-4.3.18.RELEASE" level="project" />
-    <orderEntry type="library" name="Maven: org.springframework:spring-webmvc:5.1.2.RELEASE" level="project" />
-    <orderEntry type="library" name="Maven: org.springframework:spring-web:5.1.2.RELEASE" level="project" />
-    <orderEntry type="library" name="Maven: org.springframework:spring-test:5.1.2.RELEASE" level="project" />
-    <orderEntry type="library" name="Maven: org.springframework:spring-jdbc:5.1.2.RELEASE" level="project" />
-    <orderEntry type="library" name="Maven: org.springframework:spring-tx:5.1.2.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-context:5.1.2.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-aop:5.1.2.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-beans:5.1.2.RELEASE" level="project" />
