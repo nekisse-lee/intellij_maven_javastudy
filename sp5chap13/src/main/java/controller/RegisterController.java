@@ -21,6 +21,8 @@ public class RegisterController {
     @Autowired
     private MemberRegisterService memberRegisterService;
 
+
+
     @RequestMapping(value = "/step1", method = RequestMethod.GET)
     public String handleStep1() {
         return "register/step1";

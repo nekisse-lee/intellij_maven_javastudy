@@ -9,7 +9,7 @@ import org.springframework.context.annotation.Configuration;
 import spring.MemberRegisterService;
 
 @Configuration
-@ComponentScan(basePackages = {"survey", "spring"})
+@ComponentScan(basePackages = {"survey", "spring","interceptor"})
 public class ControllerConfig13 {
 
     @Autowired

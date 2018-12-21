@@ -1,5 +1,7 @@
 package config;
 
+import interceptor.AuthCheckInterceptor;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.MessageSource;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -37,5 +39,15 @@ public class MvcConfig13 implements WebMvcConfigurer {
         ms.setDefaultEncoding("UTF-8");
         ms.setCacheSeconds(10);
         return ms;
+    }
+
+    @Autowired
+    private AuthCheckInterceptor authCheckInterceptor;
+
+    @Override
+    public void addInterceptors(InterceptorRegistry registry) {
+        registry.addInterceptor(authCheckInterceptor)
+        .addPathPatterns("/edit/**")
+        ;
     }
 }
