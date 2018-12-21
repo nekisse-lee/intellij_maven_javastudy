@@ -1,12 +1,19 @@
 package spring;
 
+import org.springframework.beans.factory.annotation.Autowired;
+
 import java.time.LocalDateTime;
 
 public class MemberRegisterService {
+	@Autowired
 	private MemberDao memberDao;
 
 	public MemberRegisterService(MemberDao memberDao) {
 		this.memberDao = memberDao;
+	}
+
+	public MemberRegisterService() {
+
 	}
 
 	public Long regist(RegisterRequest req) {
