@@ -15,6 +15,7 @@
         <module name="sp5-chap07" />
         <module name="sp5-chap09-mvc" />
         <module name="sp5chap03" />
+        <module name="sp5chap04" />
         <module name="sp5chap111" />
         <module name="sp5chap13" />
         <module name="web" />
@@ -40,6 +41,7 @@
       <module name="sp5-chap09-mvc" target="1.8" />
       <module name="sp5-chap11" target="1.8" />
       <module name="sp5chap03" target="1.8" />
+      <module name="sp5chap04" target="1.8" />
       <module name="sp5chap09" target="1.8" />
       <module name="sp5chap111" target="1.8" />
       <module name="sp5chap13" target="1.8" />
