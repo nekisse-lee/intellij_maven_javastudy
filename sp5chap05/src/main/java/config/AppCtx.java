@@ -2,6 +2,7 @@ package config;
 
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 
 import spring.ChangePasswordService;
@@ -14,18 +15,30 @@ import spring.MemberSummaryPrinter;
 import spring.VersionPrinter;
 
 @Configuration
+@ComponentScan (basePackages = {"spring"})
 public class AppCtx {
+
+/*
+	@Bean
+	public MemberDao memberDao2() {
+		MemberDao memberDao = new MemberDao();
+		return memberDao;
+	}
+*/
 
 	@Bean
 	public MemberDao memberDao() {
-		return new MemberDao();
+		MemberDao memberDao = new MemberDao();
+		return memberDao;
 	}
 	
+/*
 	@Bean
 	public MemberRegisterService memberRegSvc() {
 		return new MemberRegisterService();
 	}
-	
+*/
+
 	@Bean
 	public ChangePasswordService changePwdSvc() {
 		return new ChangePasswordService();
@@ -43,17 +56,21 @@ public class AppCtx {
 		return new MemberSummaryPrinter();
 	}
 	
+/*
 	@Bean
 	public MemberListPrinter listPrinter() {
 		return new MemberListPrinter();
 	}
-	
+*/
+
+/*
 	@Bean
 	public MemberInfoPrinter infoPrinter() {
 		MemberInfoPrinter infoPrinter = new MemberInfoPrinter();
 		return infoPrinter;
 	}
-	
+*/
+
 	@Bean
 	public VersionPrinter versionPrinter() {
 		VersionPrinter versionPrinter = new VersionPrinter();

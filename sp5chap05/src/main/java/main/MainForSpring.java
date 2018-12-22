@@ -24,7 +24,12 @@ public class MainForSpring {
 	
 	public static void main(String[] args) throws IOException {
 		ctx = new AnnotationConfigApplicationContext(AppCtx.class);
-		
+
+
+		String[] str = {"new ", "a@a.com", "a", "a", "a"};
+		processNewCommand(str);
+
+
 		BufferedReader reader = 
 				new BufferedReader(new InputStreamReader(System.in));
 		while (true) {
@@ -60,7 +65,7 @@ public class MainForSpring {
 			return;
 		}
 		MemberRegisterService regSvc = 
-				ctx.getBean("memberRegSvc", MemberRegisterService.class);
+				ctx.getBean( MemberRegisterService.class);
 		RegisterRequest req = new RegisterRequest();
 		req.setEmail(arg[1]);
 		req.setName(arg[2]);
@@ -85,7 +90,7 @@ public class MainForSpring {
 			return;
 		}
 		ChangePasswordService changePwdSvc =
-				ctx.getBean("changePwdSvc", ChangePasswordService.class);
+				ctx.getBean( ChangePasswordService.class);
 		try {
 			changePwdSvc.changePassword(arg[1], arg[2], arg[3]);
 			System.out.println("암호를 변경했습니다.\n");
