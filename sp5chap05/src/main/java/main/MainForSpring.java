@@ -24,8 +24,7 @@ public class MainForSpring {
 	
 	public static void main(String[] args) throws IOException {
 		ctx = new AnnotationConfigApplicationContext(AppCtx.class);
-		String[] str = {"new ", "a@a.com", "a", "a", "a"};
-		processNewCommand(str);
+		
 		BufferedReader reader = 
 				new BufferedReader(new InputStreamReader(System.in));
 		while (true) {
@@ -85,7 +84,7 @@ public class MainForSpring {
 			printHelp();
 			return;
 		}
-		ChangePasswordService changePwdSvc = 
+		ChangePasswordService changePwdSvc =
 				ctx.getBean("changePwdSvc", ChangePasswordService.class);
 		try {
 			changePwdSvc.changePassword(arg[1], arg[2], arg[3]);

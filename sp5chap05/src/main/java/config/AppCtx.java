@@ -2,24 +2,25 @@ package config;
 
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 
-import spring.*;
-
-import java.time.format.DateTimeFormatter;
+import spring.ChangePasswordService;
+import spring.MemberDao;
+import spring.MemberInfoPrinter;
+import spring.MemberListPrinter;
+import spring.MemberPrinter;
+import spring.MemberRegisterService;
+import spring.MemberSummaryPrinter;
+import spring.VersionPrinter;
 
 @Configuration
-//@ComponentScan(basePackages = {"spring"})
 public class AppCtx {
 
 	@Bean
 	public MemberDao memberDao() {
 		return new MemberDao();
 	}
-
-
-
+	
 	@Bean
 	public MemberRegisterService memberRegSvc() {
 		return new MemberRegisterService();
@@ -27,25 +28,20 @@ public class AppCtx {
 	
 	@Bean
 	public ChangePasswordService changePwdSvc() {
-		ChangePasswordService pwdSvc = new ChangePasswordService();
-//		pwdSvc.setMemberDao(memberDao());
-		return pwdSvc;
+		return new ChangePasswordService();
 	}
 	
 	@Bean
-	public MemberPrinter memberPrinter() {
-		return new MemberPrinter();
-	}
-
-	/*@Bean
+	@Qualifier("printer")
 	public MemberPrinter memberPrinter1() {
 		return new MemberPrinter();
 	}
-
+	
 	@Bean
+	@Qualifier("summaryPrinter")
 	public MemberSummaryPrinter memberPrinter2() {
 		return new MemberSummaryPrinter();
-	}*/
+	}
 	
 	@Bean
 	public MemberListPrinter listPrinter() {
@@ -54,9 +50,8 @@ public class AppCtx {
 	
 	@Bean
 	public MemberInfoPrinter infoPrinter() {
-		/*infoPrinter.setMemberDao(memberDao());
-		infoPrinter.setPrinter(memberPrinter());*/
-		return new MemberInfoPrinter();
+		MemberInfoPrinter infoPrinter = new MemberInfoPrinter();
+		return infoPrinter;
 	}
 	
 	@Bean
