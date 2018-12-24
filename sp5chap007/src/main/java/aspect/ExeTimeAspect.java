@@ -10,17 +10,16 @@ import org.springframework.stereotype.Component;
 import java.util.Arrays;
 
 @Aspect
-@Component
 public class ExeTimeAspect {
 
     @Pointcut("execution(public * chap007..*(..))")
-    private void publicTarget() {
+    public void publicTarget() {
 
     }
 
 
     @Around("publicTarget()")
-    public Object measure(ProceedingJoinPoint joinPoint) throws Throwable{
+    public Object measure(ProceedingJoinPoint joinPoint) throws Throwable {
         long start = System.nanoTime();
 
         try {
@@ -29,10 +28,11 @@ public class ExeTimeAspect {
         } finally {
             long finish = System.nanoTime();
             Signature sig = joinPoint.getSignature();
-            System.out.printf("%s.%s(%s) 실행 시간 : %d ns\n",
+            System.out.printf("%s.%s(%s) 실행 시간 : %d ns\n" /*+ "파라미터 : %s \n"*/,
                     joinPoint.getTarget().getClass().getSimpleName(),
                     sig.getName(), Arrays.toString(joinPoint.getArgs()),
-                    (finish-start));
+                    (finish - start)
+                    /*, joinPoint.getArgs().toString()*/);
         }
 
     }

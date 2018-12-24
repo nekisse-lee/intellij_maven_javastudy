@@ -1,7 +1,6 @@
 package chap007;
 
 
-
 public class ExeTimeCalculator implements Calculator {
     private Calculator delegate;
 
@@ -16,7 +15,7 @@ public class ExeTimeCalculator implements Calculator {
         long end = System.nanoTime();
         System.out.printf("%s.factorial(%d) 실행 시간 = %d\n",
                 delegate.getClass().getSimpleName(),
-                num,(end-start));
+                num, (end - start));
         return result;
     }
 }
