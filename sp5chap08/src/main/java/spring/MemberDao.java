@@ -8,7 +8,6 @@ import org.springframework.jdbc.support.KeyHolder;
 
 import javax.sql.DataSource;
 import java.sql.*;
-import java.util.Collection;
 import java.util.List;
 
 public class MemberDao {
