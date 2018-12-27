@@ -21,6 +21,7 @@
         <module name="sp5chap06" />
         <module name="sp5chap08" />
         <module name="sp5chap09" />
+        <module name="sp5chap11" />
         <module name="sp5chap111" />
         <module name="sp5chap13" />
         <module name="web" />
@@ -52,6 +53,7 @@
       <module name="sp5chap06" target="1.8" />
       <module name="sp5chap08" target="1.8" />
       <module name="sp5chap09" target="1.8" />
+      <module name="sp5chap11" target="1.8" />
       <module name="sp5chap111" target="1.8" />
       <module name="sp5chap13" target="1.8" />
       <module name="springex00" target="1.5" />
