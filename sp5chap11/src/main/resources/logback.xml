@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<configuration>
+    <appender name="stdout" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>%d %5p %c{2} - %m%n</pattern>
+        </encoder>
+    </appender>
+    <root level="INFO">
+        <appender-ref ref="stdout"/>
+    </root>
+
+    <!-- 로그백 적용할 대상-->
+    <logger name="org.springframework.web.servlet" level="DEBUG"/>
+    <logger name="config11" level="DEBUG"/>
+
+</configuration>
