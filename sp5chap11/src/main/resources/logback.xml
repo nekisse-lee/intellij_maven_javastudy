@@ -13,5 +13,6 @@
     <!-- 로그백 적용할 대상-->
     <logger name="org.springframework.web.servlet" level="DEBUG"/>
     <logger name="config11" level="DEBUG"/>
+    <logger name="org.springframework.jdbc" level="INFO"/>
 
 </configuration>
