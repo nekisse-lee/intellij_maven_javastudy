@@ -21,9 +21,9 @@
           <element id="library" level="project" name="Maven: org.apache.tomcat:tomcat-jdbc:8.5.27" />
           <element id="library" level="project" name="Maven: org.apache.tomcat:tomcat-juli:8.5.27" />
           <element id="library" level="project" name="Maven: mysql:mysql-connector-java:5.1.45" />
+          <element id="library" level="project" name="Maven: org.slf4j:slf4j-api:1.7.25" />
           <element id="library" level="project" name="Maven: ch.qos.logback:logback-classic:1.2.3" />
           <element id="library" level="project" name="Maven: ch.qos.logback:logback-core:1.2.3" />
-          <element id="library" level="project" name="Maven: org.slf4j:slf4j-api:1.7.25" />
         </element>
       </element>
       <element id="directory" name="META-INF">
