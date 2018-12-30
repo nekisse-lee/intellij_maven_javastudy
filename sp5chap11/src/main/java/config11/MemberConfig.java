@@ -9,6 +9,7 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 import spring11.ChangePasswordService;
 import spring11.MemberDao;
 import spring11.MemberRegisterService;
+import survey.SurveyController;
 
 @Configuration
 @EnableTransactionManagement
@@ -51,6 +52,11 @@ public class MemberConfig {
         ChangePasswordService pwdSvc = new ChangePasswordService();
         pwdSvc.setMemberDao(memberDao());
         return pwdSvc;
+    }
+
+    @Bean
+    public SurveyController surveyController() {
+        return new SurveyController();
     }
 
 }
