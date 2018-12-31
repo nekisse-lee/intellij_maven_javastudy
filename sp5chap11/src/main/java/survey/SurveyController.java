@@ -2,8 +2,11 @@ package survey;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.validation.Errors;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.servlet.ModelAndView;
 
+import javax.validation.Valid;
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
@@ -12,11 +15,20 @@ import java.util.List;
 @RequestMapping("/survey")
 public class SurveyController {
 
-    @GetMapping
+    /*@GetMapping
     public String form(Model model) {
         List<Question> questions = createQuestions();
         model.addAttribute("questions", questions);
         return "survey/surveyForm";
+    }*/
+
+    @GetMapping
+    public ModelAndView form() {
+        List<Question> questions = createQuestions();
+        ModelAndView modelAndView = new ModelAndView();
+        modelAndView.addObject("questions",questions);
+        modelAndView.setViewName("survey/surveyForm");
+        return modelAndView;
     }
 
     private List<Question> createQuestions() {
@@ -29,7 +41,8 @@ public class SurveyController {
     }
 
     @PostMapping
-    public String submit(@ModelAttribute("ansData") AnsweredData data) {
+    public String submit(@ModelAttribute("ansData") @Valid AnsweredData data/*, Errors errors*/) {
+
         return "survey/submitted";
     }
 

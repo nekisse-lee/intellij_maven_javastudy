@@ -15,7 +15,7 @@
 <p>약관 내용</p>
 <form action="step2" method="post">
     <label>
-        <input type="checkbox" value="true1" name="agree">약관 동의
+        <input type="checkbox" value="true" name="agree">약관 동의
     </label>
     <input type="submit" value="다음단계"/>
 </form>

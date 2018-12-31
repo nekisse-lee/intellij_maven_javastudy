@@ -1,8 +1,18 @@
 package survey;
 
+
+import org.hibernate.validator.constraints.NotEmpty;
+
+import javax.validation.constraints.Max;
+import javax.validation.constraints.Min;
+
 public class Respondent {
 
+    @Min(10)
+    @Max(100)
     private int age;
+
+    @NotEmpty
     private String location;
 
     public int getAge() {
