@@ -1,6 +1,7 @@
 package config11;
 
 import controller11.RegisterController;
+import controller11.TestController;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -18,6 +19,12 @@ public class ControllerConfig {
         RegisterController controller = new RegisterController();
         controller.setMemberRegisterService(memberRegSvc);
         return controller;
+    }
+
+
+    @Bean
+    public TestController testController() {
+        return new TestController();
     }
 
 
