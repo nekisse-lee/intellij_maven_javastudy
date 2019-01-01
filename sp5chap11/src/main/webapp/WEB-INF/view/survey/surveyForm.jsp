@@ -24,15 +24,7 @@
                             ${option}</label>
                 </c:forEach>
             </c:if>
-<%--
-            <c:if test="${q.choice}">
-                <c:forEach var="option" items="${q.options}">
-                    <label><input type="radio"
-                                  name="responses[${status.index}]" value="${option}">
-                            ${option}</label>
-                </c:forEach>
-            </c:if>
---%>
+
             <c:if test="${! q.choice }">
                 <input type="text" name="responses[${status.index}]">
             </c:if>
