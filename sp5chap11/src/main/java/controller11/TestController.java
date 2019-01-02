@@ -11,6 +11,6 @@ public class TestController {
 
     @GetMapping
     public String  test() {
-        return "survey/test";
+        return "vuejstest/test";
     }
 }
