@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.*;
 import spring11.DuplicateMemberException;
 import spring11.MemberRegisterService;
 import spring11.RegisterRequest;
+import spring11.WrongIdPasswordException;
 
 import javax.validation.Valid;
 
@@ -65,18 +66,26 @@ public class RegisterController {
 
     @PostMapping("/step3")
     public String handleStep3(@Valid @ModelAttribute("regReq") RegisterRequest req, Errors errors) {
+        if (errors.hasErrors()) {
+            return "register/step2";
+        }
         try {
             memberRegisterService.regist(req);
             return "register/step3";
         } catch (DuplicateMemberException e) {
+            errors.rejectValue("email", "duplicate");
+            return "register/step2";
+        } catch (WrongIdPasswordException e) {
+            errors.rejectValue("password", "nomatch.confirmPassword");
             return "register/step2";
         }
     }
 
 
+/*
     @InitBinder
     protected void initBinder(WebDataBinder binder) {
         binder.setValidator(new RegisterRequestValidator());
-
     }
+*/
 }

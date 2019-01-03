@@ -1,3 +1,4 @@
+/*
 package controller11;
 
 import org.springframework.validation.Errors;
@@ -46,3 +47,4 @@ public class RegisterRequestValidator implements Validator {
 
   }
 }
+*/

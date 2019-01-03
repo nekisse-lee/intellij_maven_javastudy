@@ -36,8 +36,8 @@ public class MvcConfig implements WebMvcConfigurer {
         return ms;
     }
 
-    @Override
+ /*   @Override
     public Validator getValidator() {
         return new RegisterRequestValidator();
-    }
+    }*/
 }

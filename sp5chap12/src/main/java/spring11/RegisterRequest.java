@@ -1,10 +1,22 @@
 package spring11;
 
+import org.hibernate.validator.constraints.Email;
+import org.hibernate.validator.constraints.NotBlank;
+import org.hibernate.validator.constraints.NotEmpty;
+
+import javax.validation.constraints.Size;
+
 public class RegisterRequest {
 
+	@NotBlank
+	@Email
 	private String email;
+
+	@Size(min = 6)
 	private String password;
+	@NotEmpty
 	private String confirmPassword;
+	@NotEmpty
 	private String name;
 
 	public String getEmail() {
