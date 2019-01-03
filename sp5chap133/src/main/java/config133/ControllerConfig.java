@@ -5,11 +5,13 @@ import controller133.RegisterController;
 import controller133.TestController;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 import spring133.AuthService;
 import spring133.MemberRegisterService;
 
 @Configuration
+@ComponentScan(basePackages = "controller133")
 public class ControllerConfig {
 
     @Autowired

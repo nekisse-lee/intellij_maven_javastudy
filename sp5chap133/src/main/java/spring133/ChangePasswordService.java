@@ -4,6 +4,7 @@ import org.springframework.transaction.annotation.Transactional;
 
 public class ChangePasswordService {
 
+
 	private MemberDao memberDao;
 
 	@Transactional
