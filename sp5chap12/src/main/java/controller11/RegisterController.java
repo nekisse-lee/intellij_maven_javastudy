@@ -4,10 +4,14 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.validation.Errors;
+import org.springframework.web.bind.WebDataBinder;
 import org.springframework.web.bind.annotation.*;
 import spring11.DuplicateMemberException;
 import spring11.MemberRegisterService;
 import spring11.RegisterRequest;
+
+import javax.validation.Valid;
 
 @Controller
 @RequestMapping("/register")
@@ -43,15 +47,36 @@ public class RegisterController {
     }
 
 
-    @PostMapping("/step3")
-    public String handleStep3(@ModelAttribute("regReq") RegisterRequest req) {
+    /*@PostMapping("/step3")
+    public String handleStep3(@ModelAttribute("regReq") RegisterRequest req, Errors errors) {
+        new RegisterRequestValidator().validate(req, errors);
+        if (errors.hasErrors()) {
+            return "register/step2";
+        }
         try {
             memberRegisterService.regist(req);
-            logger.info("req.name={}", req.getName());
+//            logger.info("req.name={}", req.getName());
+            return "register/step3";
+        } catch (DuplicateMemberException e) {
+            errors.rejectValue("email", "duplicate");
+            return "register/step2";
+        }
+    }*/
+
+    @PostMapping("/step3")
+    public String handleStep3(@Valid @ModelAttribute("regReq") RegisterRequest req, Errors errors) {
+        try {
+            memberRegisterService.regist(req);
             return "register/step3";
         } catch (DuplicateMemberException e) {
             return "register/step2";
         }
     }
 
+
+    @InitBinder
+    protected void initBinder(WebDataBinder binder) {
+        binder.setValidator(new RegisterRequestValidator());
+
+    }
 }

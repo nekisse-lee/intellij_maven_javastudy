@@ -17,7 +17,8 @@
 
 <p>
     <spring:message code="register.done"
-                    arguments="${regReq.name}"/>
+                    arguments="${regReq.name},${regReq.email},${regReq.name}"/>
+
 </p>
 <p><a href="<c:url value="/main"/>">
     [<spring:message code="go.main"/>]
