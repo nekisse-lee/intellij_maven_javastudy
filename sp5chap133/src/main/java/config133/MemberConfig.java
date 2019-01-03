@@ -6,6 +6,7 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.jdbc.datasource.DataSourceTransactionManager;
 import org.springframework.transaction.PlatformTransactionManager;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
+import spring133.AuthService;
 import spring133.ChangePasswordService;
 import spring133.MemberDao;
 import spring133.MemberRegisterService;
@@ -57,6 +58,13 @@ public class MemberConfig {
     @Bean
     public SurveyController surveyController() {
         return new SurveyController();
+    }
+
+    @Bean
+    public AuthService authService() {
+        AuthService authService = new AuthService();
+        authService.setMemberDao(memberDao());
+        return authService;
     }
 
 }
