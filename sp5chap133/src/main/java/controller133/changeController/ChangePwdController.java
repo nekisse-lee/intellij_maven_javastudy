@@ -18,9 +18,11 @@ import javax.validation.Valid;
 @RequestMapping("/edit/changePassword")
 public class ChangePwdController {
 
-  @Autowired
   private ChangePasswordService changePasswordService;
 
+  public void setChangePasswordService(ChangePasswordService changePasswordService) {
+    this.changePasswordService = changePasswordService;
+  }
 
   @GetMapping
   public String form(@ModelAttribute("command") ChangePwdCommand pwdCmd) {
@@ -28,13 +30,16 @@ public class ChangePwdController {
   }
 
   @PostMapping
-  public String submmit(@ModelAttribute("command")@Valid ChangePwdCommand pwdCmd, Errors errors, HttpSession session) {
+  public String submit(@ModelAttribute("command")@Valid ChangePwdCommand pwdCmd, Errors errors, HttpSession session) {
     new ChangePwdCommandValidator().validate(pwdCmd, errors);
     if (errors.hasErrors()) {
       return "edit/changePwdForm";
     }
-    AuthInfo authInfo = (AuthInfo) session.getAttribute("authInfo");
 
+    AuthInfo authInfo = (AuthInfo) session.getAttribute("authInfo");
+    if (authInfo == null) {
+      return "redirect:/login";
+    }
     try {
       changePasswordService.changePassword(
           authInfo.getEmail(),
