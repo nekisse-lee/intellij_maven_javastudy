@@ -1,6 +1,7 @@
 package config133;
 
 import controller133.LoginController;
+import controller133.LogoutController;
 import controller133.RegisterController;
 import controller133.TestController;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -11,7 +12,7 @@ import spring133.AuthService;
 import spring133.MemberRegisterService;
 
 @Configuration
-@ComponentScan(basePackages = "controller133")
+@ComponentScan(basePackages = {"controller133.changeController","controller133"})
 public class ControllerConfig {
 
     @Autowired

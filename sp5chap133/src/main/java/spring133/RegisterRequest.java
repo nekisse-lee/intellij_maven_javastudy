@@ -12,7 +12,7 @@ public class RegisterRequest {
 	@Email
 	private String email;
 
-	@Size(min = 6)
+	@Size(min = 3)
 	private String password;
 	@NotEmpty
 	private String confirmPassword;

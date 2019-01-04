@@ -1,8 +1,12 @@
 package controller133.changeController;
 
+import javax.validation.constraints.Size;
+
 public class ChangePwdCommand {
 
+  @Size(min = 3)
   private String currentPassword;
+  @Size(min = 3)
   private String newPassword;
 
   public String getCurrentPassword() {

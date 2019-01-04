@@ -12,5 +12,6 @@
 </head>
 <body>
 <h1><p><a href="/register/step1"> [ 회원가입으로 ]</a></p></h1>
+<h1><p><a href="/login"> [ 로그인으로 ]</a></p></h1>
 </body>
 </html>
