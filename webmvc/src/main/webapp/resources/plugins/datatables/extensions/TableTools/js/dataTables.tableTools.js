@@ -1144,7 +1144,7 @@ TableTools.prototype = {
 		this.dom.container = document.createElement( this.s.tags.container );
 		this.dom.container.className = this.classes.container;
 
-		/* Row selection config */
+		/* Row selection config14 */
 		if ( this.s.select.type != 'none' )
 		{
 			this._fnRowSelectConfig();
