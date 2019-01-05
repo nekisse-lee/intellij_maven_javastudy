@@ -1,7 +1,8 @@
 package main.java.controller;
 
-import javax.servlet.http.HttpSession;
-
+import main.java.spring.AuthInfo;
+import main.java.spring.ChangePasswordService;
+import main.java.spring.WrongIdPasswordException;
 import org.springframework.stereotype.Controller;
 import org.springframework.validation.Errors;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -9,9 +10,7 @@ import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
-import spring.AuthInfo;
-import spring.ChangePasswordService;
-import spring.WrongIdPasswordException;
+import javax.servlet.http.HttpSession;
 
 @Controller
 @RequestMapping("/edit/changePassword")

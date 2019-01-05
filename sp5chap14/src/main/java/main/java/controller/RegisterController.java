@@ -1,5 +1,8 @@
 package main.java.controller;
 
+import main.java.spring.DuplicateMemberException;
+import main.java.spring.MemberRegisterService;
+import main.java.spring.RegisterRequest;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.Errors;
@@ -7,10 +10,6 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
-
-import spring.DuplicateMemberException;
-import spring.MemberRegisterService;
-import spring.RegisterRequest;
 
 @Controller
 public class RegisterController {

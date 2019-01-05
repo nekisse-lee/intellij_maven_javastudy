@@ -1,13 +1,12 @@
 package main.java.controller;
 
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
-
+import main.java.spring.RegisterRequest;
 import org.springframework.validation.Errors;
 import org.springframework.validation.ValidationUtils;
 import org.springframework.validation.Validator;
 
-import spring.RegisterRequest;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 public class RegisterRequestValidator implements Validator {
 	private static final String emailRegExp = 

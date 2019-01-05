@@ -1,6 +1,12 @@
 <component name="ArtifactManager">
   <artifact type="war" name="sp5chap13:war">
     <output-path>$PROJECT_DIR$/sp5chap13/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>sp5chap13</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
     <root id="archive" name="sp5chap13-1.0-SNAPSHOT.war">
       <element id="artifact" artifact-name="sp5chap13:war exploded" />
     </root>
