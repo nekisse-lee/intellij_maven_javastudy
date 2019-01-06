@@ -1,15 +1,15 @@
 package config14;
 
-import controller133.LoginController;
-import controller133.LogoutController;
-import controller133.RegisterController;
-import controller133.changeController.ChangePwdController;
+import controller14.LoginController;
+import controller14.LogoutController;
+import controller14.RegisterController;
+import controller14.changeController.ChangePwdController;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import spring133.AuthService;
-import spring133.ChangePasswordService;
-import spring133.MemberRegisterService;
+import spring14.AuthService;
+import spring14.ChangePasswordService;
+import spring14.MemberRegisterService;
 
 @Configuration
 public class ControllerConfig {

@@ -6,10 +6,10 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.jdbc.datasource.DataSourceTransactionManager;
 import org.springframework.transaction.PlatformTransactionManager;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
-import spring133.AuthService;
-import spring133.ChangePasswordService;
-import spring133.MemberDao;
-import spring133.MemberRegisterService;
+import spring14.AuthService;
+import spring14.ChangePasswordService;
+import spring14.MemberDao;
+import spring14.MemberRegisterService;
 import survey133.SurveyController;
 
 @Configuration
