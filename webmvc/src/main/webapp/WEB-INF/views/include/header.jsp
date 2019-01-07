@@ -62,7 +62,7 @@
                   <li>
                     <!-- inner menu: contains the actual data -->
                     <ul class="menu">
-                      <li><!-- start message -->
+                      <li><!-- start message16 -->
                         <a href="#">
                           <div class="pull-left">
                             <img src="/resources/dist/img/user7-128x128.jpg" class="img-circle" alt="User Image"/>
@@ -73,7 +73,7 @@
                           </h4>
                           <p>Why not buy a new awesome theme?</p>
                         </a>
-                      </li><!-- end message -->
+                      </li><!-- end message16 -->
                       <li>
                         <a href="#">
                           <div class="pull-left">

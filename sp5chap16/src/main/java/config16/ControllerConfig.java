@@ -2,6 +2,7 @@ package config16;
 
 import controller16.*;
 import controller16.changeController.ChangePwdController;
+import controller16.restcontorller.RestMemberController;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -79,4 +80,12 @@ public class ControllerConfig {
     }
 
 
+
+    @Bean
+    public RestMemberController restMemberController() {
+        RestMemberController controller = new RestMemberController();
+        controller.setMemberDao(memberDao);
+        controller.setRegisterService(memberRegSvc);
+        return controller;
+    }
 }
