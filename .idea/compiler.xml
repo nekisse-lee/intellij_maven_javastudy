@@ -28,6 +28,7 @@
         <module name="sp5chap13" />
         <module name="sp5chap133" />
         <module name="sp5chap14" />
+        <module name="sp5chap16" />
         <module name="web" />
         <module name="webmvc" />
       </profile>
@@ -63,6 +64,7 @@
       <module name="sp5chap13" target="1.8" />
       <module name="sp5chap133" target="1.8" />
       <module name="sp5chap14" target="1.8" />
+      <module name="sp5chap16" target="1.8" />
       <module name="springex00" target="1.5" />
       <module name="web" target="1.8" />
       <module name="webmvc" target="1.8" />

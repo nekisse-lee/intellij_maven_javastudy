@@ -10,6 +10,7 @@
     <file type="web" url="file://$PROJECT_DIR$/sp5chap13" />
     <file type="web" url="file://$PROJECT_DIR$/sp5chap133" />
     <file type="web" url="file://$PROJECT_DIR$/sp5chap14" />
+    <file type="web" url="file://$PROJECT_DIR$/sp5chap16" />
     <file type="web" url="file://$PROJECT_DIR$/web" />
     <file type="web" url="file://$PROJECT_DIR$/webmvc" />
   </component>
@@ -48,6 +49,7 @@
         <option value="$PROJECT_DIR$/sp5chap12/pom.xml" />
         <option value="$PROJECT_DIR$/sp5chap133/pom.xml" />
         <option value="$PROJECT_DIR$/sp5chap14/pom.xml" />
+        <option value="$PROJECT_DIR$/sp5chap16/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">

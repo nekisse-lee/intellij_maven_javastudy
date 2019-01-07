@@ -26,7 +26,7 @@
         SECOND = 5,
         MILLISECOND = 6,
 
-        // internal storage for locale config14 files
+        // internal storage for locale config16 files
         locales = {},
 
         // extra moment internal properties (plugins register props here)
@@ -1297,7 +1297,7 @@
         case 'a' : // fall through to A
         case 'A' :
             config._meridiem = input;
-            // config14._isPm = config14._locale.isPM(input);
+            // config16._isPm = config16._locale.isPM(input);
             break;
         // HOUR
         case 'h' : // fall through to hh
@@ -1388,7 +1388,7 @@
 
             // TODO: We need to take the current isoWeekYear, but that depends on
             // how we interpret now (local, utc, fixed offset). So create
-            // a now version of current config14 (take local/utc/offset flags, and
+            // a now version of current config16 (take local/utc/offset flags, and
             // create now).
             weekYear = dfl(w.GG, config._a[YEAR], weekOfYear(moment(), 1, 4).year);
             week = dfl(w.W, 1);
