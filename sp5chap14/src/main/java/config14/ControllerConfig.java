@@ -66,4 +66,17 @@ public class ControllerConfig {
     }
 
 
+    @Bean
+    public MemberDetailController memberDetailController() {
+        MemberDetailController controller = new MemberDetailController();
+        controller.setMemberDao(memberDao);
+        return controller;
+    }
+
+    @Bean
+    public CommonExceptionHandler handler() {
+        return new CommonExceptionHandler();
+    }
+
+
 }
