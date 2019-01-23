@@ -10,6 +10,7 @@
         <module name="Client" />
         <module name="console_chatting" />
         <module name="ex000" />
+        <module name="javaexam" />
         <module name="minochatting" />
         <module name="nekisse00" />
         <module name="sp5-chap06" />
@@ -42,6 +43,7 @@
       <module name="ex0000" target="1.5" />
       <module name="examcode" target="1.5" />
       <module name="java_study" target="1.5" />
+      <module name="javaexam" target="8" />
       <module name="javastudy" target="8" />
       <module name="minochatting" target="1.5" />
       <module name="mvcweb" target="1.8" />
