@@ -15,7 +15,8 @@ public class StringExam {
     stringBuilder.append("hello");
     stringBuilder.append("world");
     System.out.println("stringBuilder = " + stringBuilder);
-    System.out.println("stringBuilder = " + stringBuilder.replace(0,5,"HELLO"));
+    System.out.println
+        ("stringBuilder = " + stringBuilder.replace(0,5,"HELLO"));
     System.out.println("stringBuilder = " + stringBuilder);
 
   }
