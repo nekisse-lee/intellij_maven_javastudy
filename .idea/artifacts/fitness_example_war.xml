@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="fitness-example:war">
+    <output-path>$USER_HOME$/Desktop/공부 예제 폴더/fitness-example/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>fitness-example</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="fitness-example.war">
+      <element id="artifact" artifact-name="fitness-example:war exploded" />
+    </root>
+  </artifact>
+</component>

@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="VcsDirectoryMappings">
+    <mapping directory="$USER_HOME$/Desktop/공부 예제 폴더/ex/tdd-practice" vcs="Git" />
+    <mapping directory="$USER_HOME$/Desktop/공부 예제 폴더/fitness-example" vcs="Git" />
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
   </component>
 </project>

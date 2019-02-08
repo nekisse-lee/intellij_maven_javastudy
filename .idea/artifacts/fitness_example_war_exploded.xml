@@ -1,0 +1,28 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="fitness-example:war exploded">
+    <output-path>$USER_HOME$/Desktop/공부 예제 폴더/fitness-example/target/fitness-example</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <exploded>true</exploded>
+        <module>fitness-example</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="root">
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="fitness-example" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="Maven: junit:junit-dep:4.10" />
+          <element id="library" level="project" name="Maven: org.hamcrest:hamcrest-core:1.1" />
+          <element id="library" level="project" name="Maven: org.fitnesse:fitnesse:20081201" />
+        </element>
+      </element>
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$USER_HOME$/Desktop/공부 예제 폴더/fitness-example/target/fitness-example/META-INF/MANIFEST.MF" />
+      </element>
+      <element id="javaee-facet-resources" facet="fitness-example/web/Web" />
+    </root>
+  </artifact>
+</component>

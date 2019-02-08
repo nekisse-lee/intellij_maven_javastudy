@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="cleancoders:war">
+    <output-path>$USER_HOME$/Desktop/공부 예제 폴더/print-prime-try-yourself/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>cleancoders</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="cleancoders.war">
+      <element id="artifact" artifact-name="cleancoders:war exploded" />
+    </root>
+  </artifact>
+</component>

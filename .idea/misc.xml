@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="FrameworkDetectionExcludesConfiguration">
+    <file type="web" url="file://$USER_HOME$/Desktop/공부 예제 폴더/ex/tdd-practice" />
+    <file type="web" url="file://$USER_HOME$/Desktop/공부 예제 폴더/fitness-example" />
+    <file type="web" url="file://$USER_HOME$/Desktop/공부 예제 폴더/fitness-example-master" />
+    <file type="web" url="file://$USER_HOME$/Desktop/공부 예제 폴더/print-prime-try-yourself" />
     <file type="web" url="file://$PROJECT_DIR$/ex000" />
+    <file type="web" url="file://$PROJECT_DIR$/javaexam" />
     <file type="web" url="file://$PROJECT_DIR$/sp5chap04" />
     <file type="web" url="file://$PROJECT_DIR$/sp5chap09" />
     <file type="web" url="file://$PROJECT_DIR$/sp5chap11" />
@@ -51,6 +56,9 @@
         <option value="$PROJECT_DIR$/sp5chap14/pom.xml" />
         <option value="$PROJECT_DIR$/sp5chap16/pom.xml" />
         <option value="$PROJECT_DIR$/javaexam/pom.xml" />
+        <option value="$USER_HOME$/Desktop/공부 예제 폴더/fitness-example/pom.xml" />
+        <option value="$USER_HOME$/Desktop/공부 예제 폴더/print-prime-try-yourself/pom.xml" />
+        <option value="$USER_HOME$/Desktop/공부 예제 폴더/ex/tdd-practice/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">

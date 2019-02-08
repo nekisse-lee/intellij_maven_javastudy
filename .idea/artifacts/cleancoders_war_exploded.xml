@@ -1,0 +1,28 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="cleancoders:war exploded">
+    <output-path>$USER_HOME$/Desktop/공부 예제 폴더/print-prime-try-yourself/target/cleancoders</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <exploded>true</exploded>
+        <module>cleancoders</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="root">
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="cleancoders" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="Maven: org.fitnesse:fitnesse:20081201" />
+          <element id="library" level="project" name="Maven: junit:junit-dep:4.10" />
+          <element id="library" level="project" name="Maven: org.hamcrest:hamcrest-core:1.1" />
+        </element>
+      </element>
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$USER_HOME$/Desktop/공부 예제 폴더/print-prime-try-yourself/target/cleancoders/META-INF/MANIFEST.MF" />
+      </element>
+      <element id="javaee-facet-resources" facet="cleancoders/web/Web" />
+    </root>
+  </artifact>
+</component>

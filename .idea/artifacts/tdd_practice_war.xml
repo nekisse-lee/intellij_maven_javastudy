@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="tdd-practice:war">
+    <output-path>$USER_HOME$/Desktop/공부 예제 폴더/ex/tdd-practice/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>tdd-practice</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="tdd-practice.war">
+      <element id="artifact" artifact-name="tdd-practice:war exploded" />
+    </root>
+  </artifact>
+</component>

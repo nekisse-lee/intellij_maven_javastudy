@@ -3,8 +3,10 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/java_study/client/Client.iml" filepath="$PROJECT_DIR$/java_study/client/Client.iml" />
+      <module fileurl="file://$USER_HOME$/Desktop/공부 예제 폴더/print-prime-try-yourself/cleancoders.iml" filepath="$USER_HOME$/Desktop/공부 예제 폴더/print-prime-try-yourself/cleancoders.iml" />
       <module fileurl="file://$PROJECT_DIR$/java_study/console_chatting/console_chatting.iml" filepath="$PROJECT_DIR$/java_study/console_chatting/console_chatting.iml" />
       <module fileurl="file://$PROJECT_DIR$/ex000/ex000.iml" filepath="$PROJECT_DIR$/ex000/ex000.iml" />
+      <module fileurl="file://$USER_HOME$/Desktop/공부 예제 폴더/fitness-example/fitness-example.iml" filepath="$USER_HOME$/Desktop/공부 예제 폴더/fitness-example/fitness-example.iml" />
       <module fileurl="file://$PROJECT_DIR$/java_study/java_study.iml" filepath="$PROJECT_DIR$/java_study/java_study.iml" />
       <module fileurl="file://$PROJECT_DIR$/javaexam/javaexam.iml" filepath="$PROJECT_DIR$/javaexam/javaexam.iml" />
       <module fileurl="file://$PROJECT_DIR$/java_study/minochatting/minochatting.iml" filepath="$PROJECT_DIR$/java_study/minochatting/minochatting.iml" />
@@ -25,6 +27,7 @@
       <module fileurl="file://$PROJECT_DIR$/sp5chap133/sp5chap133.iml" filepath="$PROJECT_DIR$/sp5chap133/sp5chap133.iml" />
       <module fileurl="file://$PROJECT_DIR$/sp5chap14/sp5chap14.iml" filepath="$PROJECT_DIR$/sp5chap14/sp5chap14.iml" />
       <module fileurl="file://$PROJECT_DIR$/sp5chap16/sp5chap16.iml" filepath="$PROJECT_DIR$/sp5chap16/sp5chap16.iml" />
+      <module fileurl="file://$USER_HOME$/Desktop/공부 예제 폴더/ex/tdd-practice/tdd-practice.iml" filepath="$USER_HOME$/Desktop/공부 예제 폴더/ex/tdd-practice/tdd-practice.iml" />
       <module fileurl="file://$PROJECT_DIR$/web/web.iml" filepath="$PROJECT_DIR$/web/web.iml" />
       <module fileurl="file://$PROJECT_DIR$/webmvc/webmvc.iml" filepath="$PROJECT_DIR$/webmvc/webmvc.iml" />
     </modules>
