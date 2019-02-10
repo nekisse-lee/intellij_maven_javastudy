@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="bowling-game:war">
+    <output-path>$USER_HOME$/Desktop/공부 예제 폴더/bowling-game-try-yourself/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>bowling-game</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="bowling-game.war">
+      <element id="artifact" artifact-name="bowling-game:war exploded" />
+    </root>
+  </artifact>
+</component>

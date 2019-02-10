@@ -7,6 +7,7 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="bowling-game" />
         <module name="cleancoders" />
         <module name="Client" />
         <module name="console_chatting" />
@@ -38,6 +39,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="bowling-game" target="1.5" />
       <module name="cleancoders" target="1.5" />
       <module name="Client" target="8" />
       <module name="cnsole_chatting" target="1.5" />

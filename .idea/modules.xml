@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/java_study/client/Client.iml" filepath="$PROJECT_DIR$/java_study/client/Client.iml" />
+      <module fileurl="file://$USER_HOME$/Desktop/공부 예제 폴더/bowling-game-try-yourself/bowling-game.iml" filepath="$USER_HOME$/Desktop/공부 예제 폴더/bowling-game-try-yourself/bowling-game.iml" />
       <module fileurl="file://$USER_HOME$/Desktop/공부 예제 폴더/print-prime-try-yourself/cleancoders.iml" filepath="$USER_HOME$/Desktop/공부 예제 폴더/print-prime-try-yourself/cleancoders.iml" />
       <module fileurl="file://$PROJECT_DIR$/java_study/console_chatting/console_chatting.iml" filepath="$PROJECT_DIR$/java_study/console_chatting/console_chatting.iml" />
       <module fileurl="file://$PROJECT_DIR$/ex000/ex000.iml" filepath="$PROJECT_DIR$/ex000/ex000.iml" />

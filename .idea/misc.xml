@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="FrameworkDetectionExcludesConfiguration">
+    <file type="web" url="file://$USER_HOME$/Desktop/공부 예제 폴더/bowling-game-try-yourself" />
     <file type="web" url="file://$USER_HOME$/Desktop/공부 예제 폴더/ex/tdd-practice" />
     <file type="web" url="file://$USER_HOME$/Desktop/공부 예제 폴더/fitness-example" />
     <file type="web" url="file://$USER_HOME$/Desktop/공부 예제 폴더/fitness-example-master" />
@@ -59,6 +60,7 @@
         <option value="$USER_HOME$/Desktop/공부 예제 폴더/fitness-example/pom.xml" />
         <option value="$USER_HOME$/Desktop/공부 예제 폴더/print-prime-try-yourself/pom.xml" />
         <option value="$USER_HOME$/Desktop/공부 예제 폴더/ex/tdd-practice/pom.xml" />
+        <option value="$USER_HOME$/Desktop/공부 예제 폴더/bowling-game-try-yourself/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">
