@@ -1,4 +1,4 @@
-package primefactors;
+package tdd.primefactors;
 
 import org.junit.Test;
 

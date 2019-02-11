@@ -1,4 +1,4 @@
-package bowlinggame;
+package tdd.bowlinggame;
 
 public class Game {
   private int[] rolls = new int[21];

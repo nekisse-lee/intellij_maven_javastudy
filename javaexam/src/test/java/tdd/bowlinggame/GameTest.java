@@ -1,7 +1,6 @@
-package bowlinggame;
+package tdd.bowlinggame;
 
 import org.junit.Before;
-import org.junit.Ignore;
 import org.junit.Test;
 
 import static org.hamcrest.core.Is.is;
