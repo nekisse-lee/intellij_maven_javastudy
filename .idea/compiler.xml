@@ -48,6 +48,7 @@
       <module name="ex000" target="1.8" />
       <module name="ex0000" target="1.5" />
       <module name="examcode" target="1.5" />
+      <module name="expense" target="1.5" />
       <module name="fitness-example" target="1.5" />
       <module name="java_study" target="1.5" />
       <module name="javaexam" target="8" />

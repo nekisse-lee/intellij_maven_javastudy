@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="expense:war">
+    <output-path>$USER_HOME$/Desktop/공부 예제 폴더/code clean/expense/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>expense</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="expense.war">
+      <element id="artifact" artifact-name="expense:war exploded" />
+    </root>
+  </artifact>
+</component>

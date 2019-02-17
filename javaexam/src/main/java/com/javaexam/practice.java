@@ -3,7 +3,7 @@ package com.javaexam;
 import java.util.Hashtable;
 
 public class practice {
-  Hashtable
+
 
   private static void addSum() {
     int sum = 0;
