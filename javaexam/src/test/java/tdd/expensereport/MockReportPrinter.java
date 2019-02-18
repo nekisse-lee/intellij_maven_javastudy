@@ -1,4 +1,4 @@
-package expensereport;
+package tdd.expensereport;
 
 public class MockReportPrinter implements ReportPrinter {
 

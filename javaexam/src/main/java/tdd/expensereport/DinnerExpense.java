@@ -1,4 +1,4 @@
-package expensereport;
+package tdd.expensereport;
 
 public class DinnerExpense extends Expense {
   public DinnerExpense(int amount) {
