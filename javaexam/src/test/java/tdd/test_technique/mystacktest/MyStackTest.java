@@ -11,9 +11,9 @@ public class MyStackTest {
     public void pop_should_return_pushed_value() {
         MyStack stack = new MyStack();
         stack.push(1);
-        assertThat(stack.app(), is(1));
         stack.push(2);
-        assertThat(stack.app(), is(2));
 
+        assertThat(stack.app(), is(2));
+        assertThat(stack.app(), is(1));
     }
 }
