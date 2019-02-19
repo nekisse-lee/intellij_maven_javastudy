@@ -13,6 +13,9 @@
         <element id="directory" name="classes">
           <element id="module-output" name="javaexam" />
         </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="Maven: org.hamcrest:hamcrest-core:1.3" />
+        </element>
       </element>
       <element id="directory" name="META-INF">
         <element id="file-copy" path="$PROJECT_DIR$/javaexam/target/javaexam-1.0-SNAPSHOT/META-INF/MANIFEST.MF" />
