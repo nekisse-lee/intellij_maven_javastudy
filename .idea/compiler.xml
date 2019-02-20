@@ -16,6 +16,7 @@
         <module name="javaexam" />
         <module name="minochatting" />
         <module name="nekisse00" />
+        <module name="qna" />
         <module name="sp5-chap06" />
         <module name="sp5-chap07" />
         <module name="sp5-chap09-mvc" />
@@ -56,6 +57,7 @@
       <module name="minochatting" target="1.5" />
       <module name="mvcweb" target="1.8" />
       <module name="nekisse00" target="1.5" />
+      <module name="qna" target="1.8" />
       <module name="Server" target="8" />
       <module name="sp5-chap06" target="1.8" />
       <module name="sp5-chap07" target="1.8" />
@@ -84,6 +86,7 @@
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="ex000" options="-Xlint:all" />
+      <module name="qna" options="-parameters" />
       <module name="web" options="-Xlint:all" />
       <module name="webmvc" options="-Xlint:all" />
     </option>

@@ -62,6 +62,7 @@
         <option value="$USER_HOME$/Desktop/공부 예제 폴더/print-prime-try-yourself/pom.xml" />
         <option value="$USER_HOME$/Desktop/공부 예제 폴더/ex/tdd-practice/pom.xml" />
         <option value="$USER_HOME$/Desktop/공부 예제 폴더/bowling-game-try-yourself/pom.xml" />
+        <option value="$PROJECT_DIR$/qna/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">
