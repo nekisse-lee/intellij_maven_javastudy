@@ -8,16 +8,33 @@
 <h1><a href="index.html">WEB</a></h1>
 
 
-<input id="night_day" type="button" value="night" onclick="
-if (document.querySelector('#night_day').value==='night'){
-document.querySelector('body').style.backgroundColor = 'black';
-document.querySelector('body').style.color = 'white';
-document.querySelector('#night_day').value ='day';
-}else {
-  document.querySelector('body').style.backgroundColor = 'white';
-document.querySelector('body').style.color = 'orange';
-document.querySelector('#night_day').value ='night';
-}
+<input type="button" value="night" onclick="
+  let target = document.querySelector('body');
+    if (this.value==='night'){
+      target.style.backgroundColor = 'black';
+      target.style.color = 'white';
+    this.value ='day';
+
+      let aList = document.querySelectorAll('a');
+      let i = 0;
+      while(i < aList.length){
+      aList[i].style.color = 'powderblue';
+      i = i + 1;
+      }
+
+
+    }else {
+      target.style.backgroundColor = 'white';
+      target.style.color = 'black';
+    this.value ='night';
+
+    let aList = document.querySelectorAll('a');
+        let i = 0;
+        while(i < aList.length){
+        aList[i].style.color = 'blue';
+        i = i + 1;
+        }
+    }
 
 ">
 
@@ -34,5 +51,39 @@ document.querySelector('#night_day').value ='night';
   The Web browser was released outside of CERN in 1991, first to other research institutions starting in January 1991 and to the general
   public on the Internet in August 1991.
 </p>
+
+<input type="button" value="night" onclick="
+let selectBody = document.querySelector('body');
+
+
+if (this.value==='night'){
+      selectBody.style.backgroundColor = 'black';
+      selectBody.style.color = 'white';
+    this.value ='day';
+    }else {
+      selectBody.style.backgroundColor = 'white';
+      selectBody.style.color = 'orange';
+    this.value ='night';
+    }
+
+">
+
+
+<input type="button" value="night" onclick="
+let selectBody = document.querySelector('body');
+z
+
+if (this.value==='night'){
+      selectBody.style.backgroundColor = 'black';
+      selectBody.style.color = 'white';
+    this.value ='day';
+    }else {
+      selectBody.style.backgroundColor = 'white';
+      selectBody.style.color = 'orange';
+    this.value ='night';
+    }
+
+">
+
 </body>
 </html>
