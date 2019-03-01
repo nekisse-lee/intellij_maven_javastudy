@@ -1,51 +1,65 @@
 <!doctype html>
-<html>
+<html lang="ko">
 <head>
-  <title>WEB2 </title>
+  <title>WEB1 - Welcome</title>
   <meta charset="utf-8">
   <script>
-    function nightDayHandler(self) {
-      let target = document.querySelector('body');
-      if (self.value === 'night') {
-        target.style.backgroundColor = 'black';
-        target.style.color = 'white';
-        self.value = 'day';
 
+    let Links = {
+      setColor: function(color) {
         let aList = document.querySelectorAll('a');
         let i = 0;
         while (i < aList.length) {
-          aList[i].style.color = 'powderblue';
+          aList[i].style.color = color;
           i = i + 1;
         }
+      }
+    };
+
+
+
+
+    let Body = {
+      setColor: function(color) {
+        document.querySelector('body').style.color = color;
+      },
+      setBackgroundColor : function(color) {
+        document.querySelector('body').style.backgroundColor = color;
+      }
+    };
+
+
+
+
+
+    function nightDayHandler(self) {
+      if (self.value === 'night') {
+        Body.setBackgroundColor('black');
+        Body.setColor('white');
+        self.value = 'day';
+
+        Links.setColor('powderblue');
 
 
       } else {
-        target.style.backgroundColor = 'white';
-        target.style.color = 'black';
+        Body.setBackgroundColor('white');
+        Body.setColor('black');
         self.value = 'night';
 
-        let aList = document.querySelectorAll('a');
-        let i = 0;
-        while (i < aList.length) {
-          aList[i].style.color = 'blue';
-          i = i + 1;
-        }
+        Links.setColor('blue')
       }
     }
 
   </script>
 </head>
 <body>
-<h1><a href="index.html">WEB2</a></h1>
-
-    <input type="button" value="night" onclick="
-      nightDayHandler(this)
-    ">
+<h1><a href="index.html">WEB</a></h1>
 
 
-    <input type="button" value="night" onclick="
-      nightDayHandler(this)
-    ">
+<input type="button" value="night" onclick="
+nightDayHandler(this);
+">
+
 
 
 <ol>
