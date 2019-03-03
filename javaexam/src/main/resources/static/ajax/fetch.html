@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<body>
+<article>
+
+</article>
+<input type="button" value="fetch" onclick="
+/*
+      fetch('html').then(function(response) {
+          response.text().then(function(text) {
+              alert(text);
+              document.querySelector('article').innerHTML = text;
+          });
+      });
+*/
+
+
+
+//Asynchronous
+
+callbackme = function (){
+  console.log('response end');
+};
+
+fetch('html').then(function (response){
+  console.log(response);
+  console.log(response.status);
+  if (response.status=='404') {
+    alert('not found ');
+  }
+
+});
+
+
+
+  "/>
+
+
+</body>
+</html>
